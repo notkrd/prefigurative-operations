@@ -65,12 +65,26 @@ function random_sentence(the_nouns, the_verbs, the_adjectives) {
     return rand_word(the_nouns) + " " + rand_word(the_verbs) + " " + rand_word(the_adjectives) + " " + rand_word(the_nouns)
 }
 
+function display_lines(lines) {
+    display_text(lines.reduce((t,x) => t + `
+    ` + x, ""), the_composition)
+}
+
 let doct_nouns = nlp(doct_discovery).nouns().normalize().toSingular().json()
 let doct_verbs = nlp(doct_discovery).verbs().normalize().toPresentTense().json()
 let doct_adjectives = nlp(doct_discovery).adjectives().normalize().json()     
 let the_421_nouns = nlp(the_421st).nouns().toSingular().normalize().json()
 let the_421_verbs = nlp(the_421st).verbs().toPresentTense().normalize().json()
 let the_421_adjectives = nlp(the_421st).adjectives().normalize().json()
+let UPDATE_INTERVAL = 3000
+
+let current_lines = [...Array(100).keys()].map(_ => random_sentence(doct_nouns, doct_verbs, doct_adjectives))
+
+let sent_progression = window.setInterval(function(){
+    current_lines.shift()
+    current_lines.push(random_sentence(doct_nouns, doct_verbs, doct_adjectives))
+    display_lines(current_lines)
+}, UPDATE_INTERVAL)
 
 const a_text = [...Array(10).keys()].reduce((t,x) => t + `
 ` + random_sentence(doct_nouns, doct_verbs, doct_adjectives), "")
@@ -79,6 +93,3 @@ const b_text = [...Array(10).keys()].reduce((t,x) => t + `
 
 display_text(doct_discovery, the_canon)
 display_text(the_421st, the_counter )
-display_text(a_text + `
-
-` + b_text, the_composition)
