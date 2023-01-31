@@ -61,7 +61,7 @@ const new_words = document.getElementById("newWords")
 const old_words = document.getElementById("oldWords")
 const new_syntax = document.getElementById("newSyntax")
 
-const rand_word = (all_words) => all_words[Math.floor(Math.random() * all_words.length)]["text"].toLowerCase()
+const rand_word = (all_words) => all_words[Math.floor(Math.random() * all_words.length)].toLowerCase()
 function display_text(a_text, a_page=the_palimpsest) {
     a_page.innerText = a_text;
 }
@@ -83,7 +83,7 @@ function update_menu(the_menu, the_options, num_options, kind) {
         newA.appendChild(theWord);
         newA.id = kind+a_number;
         newA.id;
-        newA.href = '#';
+        newA.href = `function:${kind}(${a_word})`;
         return newA;
     }
     new_options.forEach((a_word, i) => {
@@ -92,20 +92,30 @@ function update_menu(the_menu, the_options, num_options, kind) {
     })
 }
 
-let doct_nouns = nlp(doct_discovery).nouns().normalize().toSingular().json()
-let doct_verbs = nlp(doct_discovery).verbs().normalize().toPresentTense().json()
-let doct_adjectives = nlp(doct_discovery).adjectives().normalize().json()     
-let the_421_nouns = nlp(the_421st).nouns().toSingular().normalize().json()
-let the_421_verbs = nlp(the_421st).verbs().toPresentTense().normalize().json()
-let the_421_adjectives = nlp(the_421st).adjectives().normalize().json()
+function new_word(a_word){
+    the_nouns.push(a_word)
+}
+function old_word(a_word){
+    const index = the_nouns.indexOf(a_word);
+    if (index > -1) {
+        arr.splice(index, 1);
+    }
+}
+
+let doct_nouns = nlp(doct_discovery).nouns().normalize().toSingular().json().map((w)=>w["text"])
+let doct_verbs = nlp(doct_discovery).verbs().normalize().toPresentTense().json().map((w)=>w["text"])
+let doct_adjectives = nlp(doct_discovery).adjectives().normalize().json().map((w)=>w["text"])     
+let the_421_nouns = nlp(the_421st).nouns().toSingular().normalize().json().map((w)=>w["text"])
+let the_421_verbs = nlp(the_421st).verbs().toPresentTense().normalize().json().map((w)=>w["text"])
+let the_421_adjectives = nlp(the_421st).adjectives().normalize().json().map((w)=>w["text"])
 
 let UPDATE_INTERVAL = 3000
 let NUM_LINES = 50
-let the_nouns = the_421_nouns;
-let the_adjectives = the_421_adjectives;
-let the_verbs = the_421_verbs;
+let the_nouns = doct_nouns;
+let the_adjectives = doct_adjectives;
+let the_verbs = doct_verbs;
 
-let current_lines = [...Array(NUM_LINES).keys()].map(_ => random_sentence(doct_nouns, doct_verbs, doct_adjectives))
+let current_lines = [...Array(NUM_LINES).keys()].map(_ => random_sentence(the_nouns, the_verbs, the_adjectives))
 
 let sent_progression = window.setInterval(function(){
     current_lines.shift()
@@ -120,5 +130,5 @@ const b_text = [...Array(10).keys()].reduce((t,x) => t + `
 
 display_text(doct_discovery, the_canon)
 display_text(the_421st, the_counter )
-update_menu(new_words, the_421_nouns, 5, "new")
-update_menu(old_words, the_nouns, 5, "old")
+update_menu(new_words, the_421_nouns, 5, "newword")
+update_menu(old_words, the_nouns, 5, "oldword")
