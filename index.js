@@ -57,6 +57,10 @@ Rather, upon landing, the Zapatista compa Marijose will solemnly say:
 const the_canon = document.getElementById("canon")
 const the_counter = document.getElementById("counter")
 const the_composition = document.getElementById("composition")
+const new_words = document.getElementById("newWords")
+const old_words = document.getElementById("oldWords")
+const new_syntax = document.getElementById("newSyntax")
+
 const rand_word = (all_words) => all_words[Math.floor(Math.random() * all_words.length)]["text"].toLowerCase()
 function display_text(a_text, a_page=the_palimpsest) {
     a_page.innerText = a_text;
@@ -70,15 +74,38 @@ function display_lines(lines) {
     ` + x, ""), the_composition)
 }
 
+function update_menu(the_menu, the_options, num_options, kind) {
+    the_menu.innerHTML = '';
+    const new_options = [...Array(num_options).keys()].map(_ => rand_word(the_options))
+    function word_anchor(a_word, a_number) {
+        newA = document.createElement("div");
+        theWord = document.createTextNode(a_word);
+        newA.appendChild(theWord);
+        newA.id = kind+a_number;
+        newA.id;
+        newA.href = '#';
+        return newA;
+    }
+    new_options.forEach((a_word, i) => {
+        let an_anchor = word_anchor(a_word, i);
+        the_menu.appendChild(an_anchor);
+    })
+}
+
 let doct_nouns = nlp(doct_discovery).nouns().normalize().toSingular().json()
 let doct_verbs = nlp(doct_discovery).verbs().normalize().toPresentTense().json()
 let doct_adjectives = nlp(doct_discovery).adjectives().normalize().json()     
 let the_421_nouns = nlp(the_421st).nouns().toSingular().normalize().json()
 let the_421_verbs = nlp(the_421st).verbs().toPresentTense().normalize().json()
 let the_421_adjectives = nlp(the_421st).adjectives().normalize().json()
-let UPDATE_INTERVAL = 3000
 
-let current_lines = [...Array(100).keys()].map(_ => random_sentence(doct_nouns, doct_verbs, doct_adjectives))
+let UPDATE_INTERVAL = 3000
+let NUM_LINES = 50
+let the_nouns = the_421_nouns;
+let the_adjectives = the_421_adjectives;
+let the_verbs = the_421_verbs;
+
+let current_lines = [...Array(NUM_LINES).keys()].map(_ => random_sentence(doct_nouns, doct_verbs, doct_adjectives))
 
 let sent_progression = window.setInterval(function(){
     current_lines.shift()
@@ -93,3 +120,5 @@ const b_text = [...Array(10).keys()].reduce((t,x) => t + `
 
 display_text(doct_discovery, the_canon)
 display_text(the_421st, the_counter )
+update_menu(new_words, the_421_nouns, 5, "new")
+update_menu(old_words, the_nouns, 5, "old")
