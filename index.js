@@ -78,12 +78,12 @@ function update_menu(the_menu, the_options, num_options, kind) {
     the_menu.innerHTML = '';
     const new_options = [...Array(num_options).keys()].map(_ => rand_word(the_options))
     function word_anchor(a_word, a_number) {
-        newA = document.createElement("div");
+        newA = document.createElement("a");
         theWord = document.createTextNode(a_word);
         newA.appendChild(theWord);
         newA.id = kind+a_number;
         newA.id;
-        newA.href = `function:${kind}(${a_word})`;
+        newA.href = `javascript:${kind}(${a_word})`;
         return newA;
     }
     new_options.forEach((a_word, i) => {
@@ -93,6 +93,7 @@ function update_menu(the_menu, the_options, num_options, kind) {
 }
 
 function new_word(a_word){
+    console.log(a_word)
     the_nouns.push(a_word)
 }
 function old_word(a_word){

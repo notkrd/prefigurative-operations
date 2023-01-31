@@ -55,7 +55,7 @@ h1,h2,h3,h4,h5,p{
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content {background-color: #ddd;}
 
 /* Show the dropdown menu on hover */
 .interventions:hover .dropdown-content {display: block;}
