@@ -21,10 +21,14 @@ The Migration or Importation of such Persons as any of the States now existing s
 `
 
 const doct_discovery = `
+Inter Caetera - Pope Alexander VI
+
 Wherefore, as becomes Catholic kings and princes, after earnest consideration of all matters, especially of the rise and spread of the Catholic faith, as was the fashion of your ancestors, kings of renowned memory, you have purposed with the favor of divine clemency to bring under your sway the said mainlands and islands with their residents and inhabitants and to bring them to the Catholic faith. Hence, heartily commending in the Lord this your holy and praiseworthy purpose, and desirous that it be duly accomplished, and that the name of our Savior be carried into those regions, we exhort you very earnestly in the Lord and by your reception of holy baptism, whereby you are bound to our apostolic commands, and by the bowels of the mercy of our Lord Jesus Christ, enjoy strictly, that inasmuch as with eager zeal for the true faith you design to equip and despatch this expedition, you purpose also, as is your duty, to lead the peoples dwelling in those islands and countries to embrace the Christian religion; nor at any time let dangers or hardships deter you therefrom, with the stout hope and trust in your hearts that Almighty God will further your undertakings. And, in order that you may enter upon so great an undertaking with greater readiness and heartiness endowed with benefit of our apostolic favor, we, of our own accord, not at your instance nor the request of anyone else in your regard, but out of our own sole largess and certain knowledge and out of the fullness of our apostolic power, by the authority of Almighty God conferred upon us in blessed Peter and of the vicarship of Jesus Christ, which we hold on earth, do by tenor of these presents, should any of said islands have been found by your envoys and captains, give, grant, and assign to you and your heirs and successors, kings of Castile and Leon, forever, together with all their dominions, cities, camps, places, and villages, and all rights, jurisdictions, and appurtenances, all islands and mainlands found and to be found, discovered and to be discovered towards the west and south, by drawing and establishing a line from the Arctic pole, namely the north, to the Antarctic pole, namely the south, no matter whether the said mainlands and islands are found and to be found in the direction of India or towards any other quarter, the said line to be distant one hundred leagues towards the west and south from any of the islands commonly known as the Azores and Cape Verde. With this proviso however that none of the islands and mainlands, found and to be found, discovered and to be discovered, beyond that said line towards the west and south, be in the actual possession of any Christian king or prince up to the birthday of our Lord Jesus Christ just past from which the present year one thousand four hundred ninety-three begins. And we make, appoint, and depute you and your said heirs and successors lords of them with full and free power, authority, and jurisdiction of every kind; with this proviso however, that by this our gift, grant, and assignment no right acquired by any Christian prince, who may be in actual possesssion of said islands and mainlands prior to the said birthday of our Lord Jesus Christ, is hereby to be understood to be withdrawn or taking away. Moreover we command you in virtue of holy obedience that, employing all due diligence in the premises, as you also promise—nor do we doubt your compliance therein in accordance with your loyalty and royal greatness of spirit—you should appoint to the aforesaid mainlands and islands worthy, God-fearing, learned, skilled, and expeienced men, in order to instruct the aforesaid inhabitants and residents in the Catholic faith and train them in good morals. Furthermore, under penalty of excommunication "late sententie" to be incurred "ipso facto," should anyone thus contravene, we strictly forbid all persons of whatsoever rank, even imperial and royal, or of whatsoever estate, degree, order, or condition, to dare without your special permit or that of your aforesaid heirs and successors, to go for the purpose of trade or any other reason to the islands or mainlands, found and to be found, discovered and to be discovered, towards the west and south, by drawing and establishing a line from the Arctic pole to the Antarctic pole, no matter whether the mainlands and islands, found and to be found, lie in the direction of India or toward any other quarter whatsoever, the said line to be distant one hundred leagues towards the west and south, as is aforesaid, from any of the islands commonly known as the Azores and Cape Verde; apostolic constitutions and ordinances and other decrees whatsoever to the contrary notwithstanding. We trust in Him from whom empires and governments and all good things proceed, that, should you, with the Lord’s guidance, pursue this holy and praiseworthy undertaking, in a short while your hardships and endeavors will attain the most felicitious result, to the happiness and glory of all Christendom.
 `
 
 const the_421st = `-*-
+
+(Zapatista Maritime Delegation) SupGaleano.
 
 The calendar? An early morning in April. Geography? The mountains of the Mexican Southeast. A sudden silence overtakes the crickets, the distant barking of dogs, and the echo of marimba music. Here, in the belly of the mountains, it sounds more like a whisper than a shout. If we weren’t where we are, you might think it was the murmur of the open ocean. But it’s not the sound of waves crashing against the coast, the beach, or the cliff edge marked by a sheer drop. No, it’s something more than that. And then… a long wail and a sudden, brief tremor.
 
@@ -40,6 +44,10 @@ To the east, the sun, just edging above the horizon, slows its stubborn daily ri
 
 Seven people, seven Zapatistas, will make up the maritime division of our delegation to Europe. Four men, two women, and one other (unoa otroa). 4, 2, 1. The 421st Squadron is already stationed at the “Zapatistas Maritime-Land Training Center” located in the Comandanta Ramona Seedbed in the Tzotz Choj zone.
 ... 
+The four women, two men and one other are human beings. They were given the Turing Test, with a few modifications I considered pertinent, to discard the possibility that any of them, or all of them, might be a cybernetic organism, a robot that is, capable of dancing the cumbia del Sapito[i] with a few missteps. Therefore, the seven of them belong to the human race.
+
+All seven of them were born on the continent called “America” and the fact that they share pain and rage with other originary peoples from this side of the ocean makes them Latin Americans. They are also Mexicans, descended from originary Mayan peoples, as confirmed by their families, neighbors and acquaintances. They are also Zapatistas, with documents from the autonomous municipalities and the Good Government Councils that show as much. They have not been shown to have committed any crimes that were not appropriately punished. They live, work, get sick, get well, fall in love, fall out of love, laugh, cry, remember, forget, play, get serious, take notes, make up excuses—that is, they live, in the mountains of Southeastern Mexico, in Chiapas, Mexico, Latin America, America, Planet Earth, etcetera.
+...
 
 -*-
 Thus, our first footstep on European soil (assuming of course they even let us disembark) will not be that of a man, nor that of a woman, but that of an other [otroa]. In what the late SupMarcos would have called a “slap in the face of the hetero-patriarchal left,” it has been decided that the first person to disembark will be Marijose. Upon stepping for the first time on European soil and recovering from seasickness, Marijose will shout:
@@ -83,7 +91,7 @@ function update_menu(the_menu, the_options, num_options, kind) {
         newA.appendChild(theWord);
         newA.id = kind+a_number;
         newA.id;
-        newA.href = `javascript:${kind}(${a_word})`;
+        newA.href = `javascript:${kind}("${a_word}")`;
         return newA;
     }
     new_options.forEach((a_word, i) => {
@@ -92,15 +100,17 @@ function update_menu(the_menu, the_options, num_options, kind) {
     })
 }
 
-function new_word(a_word){
-    console.log(a_word)
+function newword(a_word){
     the_nouns.push(a_word)
+    update_menu(new_words, the_421_nouns, 5, "newword")
+    
 }
-function old_word(a_word){
+function oldword(a_word){
     const index = the_nouns.indexOf(a_word);
     if (index > -1) {
-        arr.splice(index, 1);
+        the_nouns.splice(index, 1);
     }
+    update_menu(old_words, the_nouns, 5, "oldword")
 }
 
 let doct_nouns = nlp(doct_discovery).nouns().normalize().toSingular().json().map((w)=>w["text"])
@@ -111,7 +121,7 @@ let the_421_verbs = nlp(the_421st).verbs().toPresentTense().normalize().json().m
 let the_421_adjectives = nlp(the_421st).adjectives().normalize().json().map((w)=>w["text"])
 
 let UPDATE_INTERVAL = 3000
-let NUM_LINES = 50
+let NUM_LINES = 24
 let the_nouns = doct_nouns;
 let the_adjectives = doct_adjectives;
 let the_verbs = doct_verbs;
