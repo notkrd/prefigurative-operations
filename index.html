@@ -8,52 +8,47 @@
 </head>
 <body>
     <h1 class="title">Prefigurative Operations</h1>
-    <div>
-        <label for="pairings">Select Canon / Counter-text Paring:</label>
-    
-        <select name="pairings" id="pairings">
-          <option value="discovery">DISCOVERY: The Papal Bull "Inter Caetera" / Sixth Declaration of the Lacondon Jungle </option>
-          <option value="reconstruction">LAW: US Supreme Court Rulings on the Slaughterhouse Cases / Are Prisons Obsolete? </option>
-          <option value="uluru">NATION: Constitution of Australia / Uluru Statement From the Heart</option>
-          <option value="discourse">POSSESSION: The Benevolent Assimilation Proclamation / A Discourse on Colonialism</option>
-        </select> </div>
-    <div class="interventions">
-        <button id="learn" class="intervention">Learn Phrase</button>
-        <div id="newWords" class="dropdown-content">
-            <a href="#" id="newword1">New 1</a>
-            <a href="#" id="newword2">New 2</a>
-            <a href="#" id="newword3">New 3</a>
+        <h3 id="textNames">DISCOVERY: The Papal Bull "Inter Caetera" / Sixth Declaration of the Lacondon Jungle</h3>
+    <div class="menubar">
+        <div class="interventions">
+            <button id="learn" class="intervention">Learn Phrase</button>
+            <div id="newWords" class="dropdown-content">
+                <a href="#" id="newword1">New 1</a>
+                <a href="#" id="newword2">New 2</a>
+                <a href="#" id="newword3">New 3</a>
+            </div>
         </div>
-    </div>
-    <div class="interventions">
-        <button id="forget" class="intervention">Forget Phrase</button>
-        <div id="oldWords" class="dropdown-content">
-            <a href="#" id="oldword1">Old 1</a>
-            <a href="#" id="oldword2">Old 2</a>
-            <a href="#" id="oldword3">Old 3</a>
+        <div class="interventions">
+            <button id="forget" class="intervention">Forget Phrase</button>
+            <div id="oldWords" class="dropdown-content">
+                <a href="#" id="oldword1">Old 1</a>
+                <a href="#" id="oldword2">Old 2</a>
+                <a href="#" id="oldword3">Old 3</a>
+            </div>
         </div>
-    </div>
-    <div class="interventions">
-        <button id="newSyntax" class="intervention">New Syntax</button>
-        <div id="newSyntax" class="dropdown-content">
-            <a href="javascript:addCat('noun')" id="addNoun">Add Noun</a>
-            <a href="javascript:addCat('verb')" id="addVerb">Add Verb</a>
-            <a href="javascript:addCat('adjective')" id="addAdjective">Add Adjective</a>
-            <a href="javascript:learnSyntax()" id="learnSyntax">Learn: </a>
-            <a href="javascript:resetSyntax()" id="resetSyntax">Reset</a>
+        <div class="interventions">
+            <button id="newSyntax" class="intervention">New Syntax</button>
+            <div id="newSyntax" class="dropdown-content">
+                <a href="javascript:addCat('noun')" id="addNoun">Add Noun</a>
+                <a href="javascript:addCat('verb')" id="addVerb">Add Verb</a>
+                <a href="javascript:addCat('adjective')" id="addAdjective">Add Adjective</a>
+                <a href="javascript:learnSyntax()" id="learnSyntax">Learn: </a>
+                <a href="javascript:resetSyntax()" id="resetSyntax">Reset</a>
+            </div>
         </div>
     </div>
     <p class="apologia">INSTRUCTIONS: Hover over the above menus to pick words from the inherited text to forget, new phrases from the counter text to learn, or create a grammatical pattern to add to the language of the generator by making a sequence of kinds of words and clicking to add it.</p>
-    <p class="apologia">NOTE: Prefigurative Operations invites readers to dismantle and refigure texts within the adversarial constraints of colonial racial capitalist language, using critical counter-texts. Participants are invited to dismantle and refigure The designer only hopes to be a vector for a few spores of the counter-texts' meanings and forms, not mine to fully know. Due to the hegemonic dynamics of algorithmic language processing, all texts are considered only in their English translation. The other side of this coin is the greater subtlety, evasions, and obscurities from surveillance possible in languages that the Large Language Models and other Natural Language Processors aren't yet trained on (Spanish, French, or Portuguese cannot really be considered safe in this way).</p>
+    <p class="apologia">NOTE: Prefigurative Operations invites readers to dismantle and refigure texts within the adversarial constraints of a colonial racial capitalist discourse, using critical counter-texts. The designer only hopes to be a vector for a few spores of the counter-texts' meanings and forms, not mine to fully know. Due to the hegemonic dynamics of algorithmic language processing, all texts are considered only in their English translation (with on the other hand, for now, greater possibilites of subtlety and evasion in non-hegemonic languages).</p>
+    <p class="apologia" id="onTexts">ON THESE TEXTS: the papal bull Inter Caetera was issued by Pope Alexander VI in 1493, granting official religious legitimacy to the Spanish and Portuguese genocidal conquests of the Americas, calling for the overthrow of existing nations. It has still not been apologized for, or even officially repealed. The writing of the Zapista Army, issued under various pen names, based in Chiapas, Mexico and consisting especially of Maya and other First Peoples offer theories and practices of survival and resistance, gaining global attention after their uprising in 1994 and key role in the Global Justice Movement against neoliberal globalisation, and developing models of collective sustainable governance. This text was issued before a listening and speaking tour in Europe 500 years after Hernan Cortez' expedition.</p>
     <div class="palimpsest">
-        <div class="text">
-            <p id="composition"></p>
-        </div>
         <div class="text">
             <p id="canon"></p>
         </div>
         <div class="text">
             <p id="counter"></p>
+        </div>
+        <div class="text">
+            <p id="composition"></p>
         </div>
     </div>
     <script src="compromise.js"></script>

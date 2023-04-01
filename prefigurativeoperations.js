@@ -64,12 +64,16 @@ Rather, upon landing, the Zapatista compa Marijose will solemnly say:
 
 // All seven of them were born on the continent called “America” and the fact that they share pain and rage with other originary peoples from this side of the ocean makes them Latin Americans. They are also Mexicans, descended from originary Mayan peoples, as confirmed by their families, neighbors and acquaintances. They are also Zapatistas, with documents from the autonomous municipalities and the Good Government Councils that show as much. They have not been shown to have committed any crimes that were not appropriately punished. They live, work, get sick, get well, fall in love, fall out of love, laugh, cry, remember, forget, play, get serious, take notes, make up excuses—that is, they live, in the mountains of Southeastern Mexico, in Chiapas, Mexico, Latin America, America, Planet Earth, etcetera.
 
-const the_canon = document.getElementById("canon")
-const the_counter = document.getElementById("counter")
-const the_composition = document.getElementById("composition")
-const new_words = document.getElementById("newWords")
-const old_words = document.getElementById("oldWords")
-const new_syntax = document.getElementById("newSyntax")
+const getId = (an_id) => document.getElementById(an_id)
+
+const the_canon = getId("canon")
+const the_counter = getId("counter")
+const the_composition = getId("composition")
+const new_words = getId("newWords")
+const old_words = getId("oldWords")
+const new_syntax = getId("newSyntax")
+const text_names = getId("textNames")
+const on_texts = getId("onTexts")
 
 const rand_elt = (an_array) => an_array[Math.floor(Math.random() * an_array.length)]
 const rand_word = (all_words) => rand_elt(all_words).toLowerCase()
@@ -112,17 +116,40 @@ function update_menu(the_menu, the_options, num_options, kind) {
     })
 }
 
+const text_pairings = {
+    "DISCOVERY": {
+        "canon": "Inter Caetera",
+        "counter": "421st SQUADRON (Zapatista Maritime Delegation)",
+        "description": "ON THESE TEXTS: the papal bull Inter Caetera was issued by Pope Alexander VI in 1493, granting official religious legitimacy to the Spanish and Portuguese genocidal conquests of the Americas, calling for the overthrow of existing nations. It has still not been apologized for, or even officially repealed. The writing of the Zapista Army, issued under various pen names, based in Chiapas, Mexico and consisting especially of Maya and other First Peoples offer theories and practices of survival and resistance, gaining global attention after their uprising in 1994 and key role in the Global Justice Movement against neoliberal globalisation, and for demonstrating models of decentralized collective governance. This text was issued before a listening and speaking tour in Europe 500 years after Hernan Cortez' expedition.",
+        "canon_text": doct_discovery,
+        "counter_text": the_421st
+    },
+    "LAW": {
+        "canon": "US Supreme Court Rulings on the Slaugherhouse cases",
+        "counter": "Are Prisons Obsolete?"
+    },
+    "NATION": {
+        "canon": "Constitution of Australia",
+        "counter": "Uluru Statement From the Heart"
+    },
+    "POSSESSION": {
+        "canon": "The Benevolent Assimilation Proclamation",
+        "counter": "A Discourse on Colonialism"
+    }
+    
+}
+
 function newword(a_word){
-    the_nouns.push(a_word)
+    canon_nouns.push(a_word)
     update_menu(new_words, the_421_nouns, 5, "newword")
     
 }
 function oldword(a_word){
-    const index = the_nouns.indexOf(a_word);
+    const index = canon_nouns.indexOf(a_word);
     if (index > -1) {
-        the_nouns.splice(index, 1);
+        canon_nouns.splice(index, 1);
     }
-    update_menu(old_words, the_nouns, 5, "oldword")
+    update_menu(old_words, canon_nouns, 5, "oldword")
 }
 
 let new_proposal = new Array();
@@ -145,34 +172,50 @@ function learnSyntax(){
     resetSyntax()
 }
 
-let doct_nouns = nlp(doct_discovery).nouns().normalize().toSingular().json().map((w)=>w["text"])
-let doct_verbs = nlp(doct_discovery).verbs().normalize().toPresentTense().json().map((w)=>w["text"])
-let doct_adjectives = nlp(doct_discovery).adjectives().normalize().json().map((w)=>w["text"])     
-let the_421_nouns = nlp(the_421st).nouns().toSingular().normalize().json().map((w)=>w["text"])
-let the_421_verbs = nlp(the_421st).verbs().toPresentTense().normalize().json().map((w)=>w["text"])
-let the_421_adjectives = nlp(the_421st).adjectives().normalize().json().map((w)=>w["text"])
-
+let canon_text;
+let counter_text;
 let the_syntax = [["noun", "verb", "adjective", "noun"]]
 let UPDATE_INTERVAL = 3000
-let NUM_LINES = 24
-let the_nouns = doct_nouns;
-let the_adjectives = doct_adjectives;
-let the_verbs = doct_verbs;
+let NUM_LINES = 48
+let canon_nouns;
+let canon_adjectives;
+let canon_verbs;
+let counter_nouns;
+let counter_verbs;
+let counter_adjectives;
 
-let current_lines = [...Array(NUM_LINES).keys()].map(_ => random_sentence(the_nouns, the_verbs, the_adjectives))
+function load_texts(a_pairing) {
+    canon_text = text_pairings[a_pairing]["canon_text"]
+    counter_text = text_pairings[a_pairing]["counter_text"]
+
+    canon_nouns = nlp(text_pairings[a_pairing]["canon_text"]).nouns().normalize().toSingular().json().map((w)=>w["text"])
+    canon_verbs = nlp(text_pairings[a_pairing]["canon_text"]).verbs().normalize().toPresentTense().json().map((w)=>w["text"])
+    canon_adjectives = nlp(text_pairings[a_pairing]["canon_text"]).adjectives().normalize().json().map((w)=>w["text"])
+    counter_nouns = nlp(text_pairings[a_pairing]["counter_text"]).nouns().normalize().toSingular().normalize().json().map((w)=>w["text"])
+    counter_verbs = nlp(text_pairings[a_pairing]["counter_text"]).verbs().normalize().toPresentTense().normalize().json().map((w)=>w["text"])
+    counter_adjectives = nlp(text_pairings[a_pairing]["counter_text"]).adjectives().normalize().json().map((w)=>w["text"])
+
+    text_names.innerText = `${a_pairing}: ${text_pairings[a_pairing]["canon"]} / ${text_pairings[a_pairing]["counter"]}`
+
+    on_texts.innerText = `ON THESE TEXTS: ${text_pairings[a_pairing]["description"]}`
+}
+
+load_texts("DISCOVERY")
+
+let current_lines = [...Array(NUM_LINES).keys()].map(_ => random_sentence(canon_nouns, canon_verbs, canon_adjectives))
 
 let sent_progression = window.setInterval(function(){
-    current_lines.shift()
-    current_lines.push(random_sentence(doct_nouns, doct_verbs, doct_adjectives, rand_elt(the_syntax)))
+    current_lines.pop()
+    current_lines.unshift(random_sentence(canon_nouns, canon_verbs, canon_adjectives, rand_elt(the_syntax)))
     display_lines(current_lines)
 }, UPDATE_INTERVAL)
 
 const a_text = [...Array(10).keys()].reduce((t,x) => t + `
-` + random_sentence(doct_nouns, doct_verbs, doct_adjectives), "")
+` + random_sentence(canon_nouns, canon_verbs, canon_adjectives), "")
 const b_text = [...Array(10).keys()].reduce((t,x) => t + `
-` + random_sentence(the_421_nouns, the_421_verbs, the_421_adjectives), "")
+` + random_sentence(counter_nouns, counter_verbs, counter_adjectives), "")
 
-display_text(doct_discovery, the_canon)
-display_text(the_421st, the_counter )
-update_menu(new_words, the_421_nouns, 5, "newword")
-update_menu(old_words, the_nouns, 5, "oldword")
+display_text(canon_text, the_canon)
+display_text(counter_text, the_counter )
+update_menu(new_words, counter_nouns, 5, "newword")
+update_menu(old_words, canon_nouns, 5, "oldword")

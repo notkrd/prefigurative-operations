@@ -1,5 +1,6 @@
 h1,h2,h3,h4,h5,p{
     font-family: 'Courier New', monospace;
+    text-align: center;
 }
 .title {
     size: larger;
@@ -7,7 +8,7 @@ h1,h2,h3,h4,h5,p{
     text-align: center;
 }
 .text{
-    width: 400px;
+    width: 400pt;
 }
 .palimpsest {
     text-align: center;
@@ -34,6 +35,14 @@ h1,h2,h3,h4,h5,p{
 .interventions {
     position: relative;
     display: inline-block;
+    width: 100pt;
+}
+
+.menubar{
+    margin: auto;
+    display: block;
+    width: 325pt;
+    padding-bottom: 2vh;
 }
 
 /* Dropdown Content (Hidden by Default) */
