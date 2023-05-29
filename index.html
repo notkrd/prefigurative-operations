@@ -8,6 +8,9 @@
 </head>
 <body>
     <h1 class="title">Prefigurative Operations</h1>
+    <label for ="pairings">Select texts:</label>
+    <select name="pairings" id="pairings">
+    </select>
         <h3 id="textNames">DISCOVERY: The Papal Bull "Inter Caetera" / Sixth Declaration of the Lacondon Jungle</h3>
     <div class="menubar">
         <div class="interventions">
@@ -32,25 +35,25 @@
                 <a href="javascript:addCat('noun')" id="addNoun">Add Noun</a>
                 <a href="javascript:addCat('verb')" id="addVerb">Add Verb</a>
                 <a href="javascript:addCat('adjective')" id="addAdjective">Add Adjective</a>
-                <a href="javascript:learnSyntax()" id="learnSyntax">Learn: </a>
-                <a href="javascript:resetSyntax()" id="resetSyntax">Reset</a>
+                <a href="javascript:learnSyntax()" id="learnSyntax">LEARN: </a>
+                <a href="javascript:resetSyntax()" id="resetSyntax">RESET</a>
             </div>
         </div>
     </div>
-    <p class="apologia">INSTRUCTIONS: Hover over the above menus to pick words from the inherited text to forget, new phrases from the counter text to learn, or create a grammatical pattern to add to the language of the generator by making a sequence of kinds of words and clicking to add it.</p>
-    <p class="apologia">NOTE: Prefigurative Operations invites readers to dismantle and refigure texts within the adversarial constraints of a colonial racial capitalist discourse, using critical counter-texts. The designer only hopes to be a vector for a few spores of the counter-texts' meanings and forms, not mine to fully know. Due to the hegemonic dynamics of algorithmic language processing, all texts are considered only in their English translation (with on the other hand, for now, greater possibilites of subtlety and evasion in non-hegemonic languages).</p>
-    <p class="apologia" id="onTexts">ON THESE TEXTS: the papal bull Inter Caetera was issued by Pope Alexander VI in 1493, granting official religious legitimacy to the Spanish and Portuguese genocidal conquests of the Americas, calling for the overthrow of existing nations. It has still not been apologized for, or even officially repealed. The writing of the Zapista Army, issued under various pen names, based in Chiapas, Mexico and consisting especially of Maya and other First Peoples offer theories and practices of survival and resistance, gaining global attention after their uprising in 1994 and key role in the Global Justice Movement against neoliberal globalisation, and developing models of collective sustainable governance. This text was issued before a listening and speaking tour in Europe 500 years after Hernan Cortez' expedition.</p>
+    <p class="apologia" id="instructions">INSTRUCTIONS: Hover over the above menus to pick words from the inherited text to forget, new phrases from the counter text to learn, or create a grammatical pattern to add to the language of the generator by making a sequence of kinds of words and clicking "LEARN" to add it.</p>
     <div class="palimpsest">
+        <div class="text">
+            <p id="composition"></p>
+        </div>
         <div class="text">
             <p id="canon"></p>
         </div>
         <div class="text">
             <p id="counter"></p>
         </div>
-        <div class="text">
-            <p id="composition"></p>
-        </div>
     </div>
+    <p class="apologia">NOTE: Prefigurative Operations invites readers to dismantle and refigure texts within the adversarial constraints of a colonial racial capitalist discourse, using critical counter-texts. The designer only hopes to be a vector for a few spores of the counter-texts' meanings and forms, not mine to fully know. Due to the hegemonic dynamics of algorithmic language processing, all texts are considered only in their English translation (with on the other hand, for now, some greater possibilites of subtlety and evasion in non-hegemonic languages).</p>
+    <p class="apologia" id="onTexts"></p>
     <script src="compromise.js"></script>
     <script src="prefigurativeoperations.js"></script>
 </body>

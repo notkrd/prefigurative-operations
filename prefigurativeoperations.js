@@ -20,6 +20,10 @@ Section. 9.
 The Migration or Importation of such Persons as any of the States now existing shall think proper to admit, shall not be prohibited by the Congress prior to the Year one thousand eight hundred and eight, but a Tax or duty may be imposed on such Importation, not exceeding ten dollars for each Person.
 `
 
+const prisons_obsolete = `In most parts of the world, it is taken for granted that whoever is convicted of a serious crime will be sent to prison. In some countries-including the United States-where capital punishment has not yet been abolished, a small but significant number of people are sentenced to death for what are considered especially grave crimes. Many people are familiar with the campaign to abolish the death penalty. In fact, it has already been abolished in most countries. Even the staunchest advocates of capital punishment acknowledge the fact that the death penalty faces serious challenges. Few people find life without the death penalty difficult to imagine. 
+On the other hand, the prison is considered an inevitable and permanent feature of our social lives. Most people are quite surprised to hear that the prison abolition movement also has a long history-one that dates back to the historical appearance of the prison as the main form of punishment. In fact, the most natural reaction is to assume that prison activists-even those who consciously refer to themselves as ”anti-prison activists”- are simply trying to ameliorate prison conditions or perhaps to reform the prison in more fundamental ways. In most circles prison abolition is simply unthinkable and implausible. Prison abolitionists are dis-missed as utopians and idealists whose ideas are at best unrealistic and impracticable, and, at worst, mystifying and foolish. This is a measure of how difficult it is to envision a social order that does not rely on the threat of sequestering people in dreadful places designed to separate them from their communities and families. The prison is considered so ”natural” that it is extremely hard to imagine life without it.
+It is my hope that this book will encourage readers to question their own assumptions about the prison. Many people have already reached the conclusion that the death penalty is an outmoded form of punishment that violates basic principles of human rights. It is time, I believe, to encourage similar conversations about the prison. During my own career as an anti-prison activist I have seen the population of U.S. prisons increase with such rapidity that many people in black, Latino, and Native American communities now have a far greater chance of going to prison than of getting a decent education. When many young people decide to join the military service in order to avoid the inevitability of a stint in prison, it should cause us to wonder whether we should not try to introduce better alternatives.`
+
 const doct_discovery = `
 Inter Caetera - Pope Alexander VI, 1493
 
@@ -74,6 +78,7 @@ const old_words = getId("oldWords")
 const new_syntax = getId("newSyntax")
 const text_names = getId("textNames")
 const on_texts = getId("onTexts")
+const pair_select = getId("pairings")
 
 const rand_elt = (an_array) => an_array[Math.floor(Math.random() * an_array.length)]
 const rand_word = (all_words) => rand_elt(all_words).toLowerCase()
@@ -98,7 +103,7 @@ function display_lines(lines) {
     ` + x, ""), the_composition)
 }
 
-function update_menu(the_menu, the_options, num_options, kind) {
+function updateMenu(the_menu, the_options, num_options, kind) {
     the_menu.innerHTML = '';
     const new_options = [...Array(num_options).keys()].map(_ => rand_word(the_options))
     function word_anchor(a_word, a_number) {
@@ -120,13 +125,15 @@ const text_pairings = {
     "DISCOVERY": {
         "canon": "Inter Caetera",
         "counter": "421st SQUADRON (Zapatista Maritime Delegation)",
-        "description": "ON THESE TEXTS: the papal bull Inter Caetera was issued by Pope Alexander VI in 1493, granting official religious legitimacy to the Spanish and Portuguese genocidal conquests of the Americas, calling for the overthrow of existing nations. It has still not been apologized for, or even officially repealed. The writing of the Zapista Army, issued under various pen names, based in Chiapas, Mexico and consisting especially of Maya and other First Peoples offer theories and practices of survival and resistance, gaining global attention after their uprising in 1994 and key role in the Global Justice Movement against neoliberal globalisation, and for demonstrating models of decentralized collective governance. This text was issued before a listening and speaking tour in Europe 500 years after Hernan Cortez' expedition.",
+        "description": "The papal bull Inter Caetera was issued by Pope Alexander VI in 1493, granting official religious legitimacy to the Spanish and Portuguese genocidal conquests of the Americas, calling for the overthrow of existing nations. It has still not been apologized for, or even officially repealed [update: the Doctrine was repudiated by the Vatican in April, 2023, answering sustained calls by Indigenous and decolonial movements]. The writing of the Zapista Army, issued under various pen names, based in Chiapas, Mexico including and led especially by Maya and other First Peoples offer theories and practices of survival and resistance, gaining global attention after their uprising in 1994 and key role in the Global Justice Movement against neoliberal globalisation, and for demonstrating models of decentralized collective governance, calling for \"a world of many worlds\". This text was issued before a listening and speaking tour in Europe 500 years after Hernan Cortez' invasion.",
         "canon_text": doct_discovery,
         "counter_text": the_421st
     },
     "LAW": {
         "canon": "US Supreme Court Rulings on the Slaugherhouse cases",
-        "counter": "Are Prisons Obsolete?"
+        "counter": "Are Prisons Obsolete?",
+        "canon_text": us_const,
+        "counter_text": prisons_obsolete
     },
     "NATION": {
         "canon": "Constitution of Australia",
@@ -139,17 +146,17 @@ const text_pairings = {
     
 }
 
-function newword(a_word){
+function newWord(a_word){
     canon_nouns.push(a_word)
-    update_menu(new_words, the_421_nouns, 5, "newword")
+    updateMenu(new_words, counter_nouns, 5, "newword")
     
 }
-function oldword(a_word){
+function oldWord(a_word){
     const index = canon_nouns.indexOf(a_word);
     if (index > -1) {
         canon_nouns.splice(index, 1);
     }
-    update_menu(old_words, canon_nouns, 5, "oldword")
+    updateMenu(old_words, canon_nouns, 5, "oldword")
 }
 
 let new_proposal = new Array();
@@ -157,12 +164,12 @@ const learnbtn = document.getElementById("learnSyntax");
 
 function addCat(a_cat){
     new_proposal.push(a_cat);
-    learnbtn.innerText = "Learn: " + new_proposal.join(" ");
+    learnbtn.innerText = "LEARN: " + new_proposal.join(" ");
 }
 
 function resetSyntax(){
     new_proposal = [];
-    learnbtn.innerText = "Learn: " + new_proposal.join(" ");
+    learnbtn.innerText = "LEARN: " + new_proposal.join(" ");
 }
 
 function learnSyntax(){
@@ -183,8 +190,10 @@ let canon_verbs;
 let counter_nouns;
 let counter_verbs;
 let counter_adjectives;
+let current_lines;
+let sent_progression;
 
-function load_texts(a_pairing) {
+function loadTexts(a_pairing) {
     canon_text = text_pairings[a_pairing]["canon_text"]
     counter_text = text_pairings[a_pairing]["counter_text"]
 
@@ -198,24 +207,34 @@ function load_texts(a_pairing) {
     text_names.innerText = `${a_pairing}: ${text_pairings[a_pairing]["canon"]} / ${text_pairings[a_pairing]["counter"]}`
 
     on_texts.innerText = `ON THESE TEXTS: ${text_pairings[a_pairing]["description"]}`
+    display_text(canon_text, the_canon)
+    display_text(counter_text, the_counter)
+    display_text(the_composition, "")
+    updateMenu(new_words, counter_nouns, 5, "newword")
+    updateMenu(old_words, canon_nouns, 5, "oldword")
+
+    current_lines = [...Array(NUM_LINES).keys()].map(_ => random_sentence(canon_nouns, canon_verbs, canon_adjectives))
+
+    sent_progression = window.setInterval(function(){
+        current_lines.pop()
+        current_lines.unshift(random_sentence(canon_nouns, canon_verbs, canon_adjectives, rand_elt(the_syntax)))
+        display_lines(current_lines)
+    }, UPDATE_INTERVAL)
 }
+loadTexts("DISCOVERY")
 
-load_texts("DISCOVERY")
+// const a_text = [...Array(10).keys()].reduce((t,x) => t + `
+// ` + random_sentence(canon_nouns, canon_verbs, canon_adjectives), "")
+// const b_text = [...Array(10).keys()].reduce((t,x) => t + `
+// ` + random_sentence(counter_nouns, counter_verbs, counter_adjectives), "")
 
-let current_lines = [...Array(NUM_LINES).keys()].map(_ => random_sentence(canon_nouns, canon_verbs, canon_adjectives))
+Object.entries(text_pairings).forEach(p => {
+    newOpt = document.createElement("Option")
+    newOpt.innerText = p[0]
+    newOpt.setAttribute("value", p[0])
+    pair_select.appendChild(newOpt)
+})
 
-let sent_progression = window.setInterval(function(){
-    current_lines.pop()
-    current_lines.unshift(random_sentence(canon_nouns, canon_verbs, canon_adjectives, rand_elt(the_syntax)))
-    display_lines(current_lines)
-}, UPDATE_INTERVAL)
-
-const a_text = [...Array(10).keys()].reduce((t,x) => t + `
-` + random_sentence(canon_nouns, canon_verbs, canon_adjectives), "")
-const b_text = [...Array(10).keys()].reduce((t,x) => t + `
-` + random_sentence(counter_nouns, counter_verbs, counter_adjectives), "")
-
-display_text(canon_text, the_canon)
-display_text(counter_text, the_counter )
-update_menu(new_words, counter_nouns, 5, "newword")
-update_menu(old_words, canon_nouns, 5, "oldword")
+pair_select.addEventListener("change", (event) => {
+    loadTexts(event.target.value)
+})
