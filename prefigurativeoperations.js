@@ -121,6 +121,11 @@ function updateMenu(the_menu, the_options, num_options, kind) {
     })
 }
 
+function formatPhrase(the_phrase, the_tag, the_element) {
+    let the_html = the_element.innerHTML
+    the_element.innerHTML = the_html.replaceAll(the_phrase, `<${the_tag}>${the_phrase}</${the_tag}>`)
+}
+
 const text_pairings = {
     "DISCOVERY": {
         "canon": "Inter Caetera",
@@ -148,15 +153,16 @@ const text_pairings = {
 
 function newWord(a_word){
     canon_nouns.push(a_word)
-    updateMenu(new_words, counter_nouns, 5, "newword")
-    
+    updateMenu(new_words, counter_nouns, 5, "newWord")
+    formatPhrase(a_word, "b",the_counter)
 }
 function oldWord(a_word){
     const index = canon_nouns.indexOf(a_word);
     if (index > -1) {
         canon_nouns.splice(index, 1);
     }
-    updateMenu(old_words, canon_nouns, 5, "oldword")
+    updateMenu(old_words, canon_nouns, 5, "oldWord")
+    formatPhrase(a_word, "s",the_canon)
 }
 
 let new_proposal = new Array();
@@ -210,8 +216,8 @@ function loadTexts(a_pairing) {
     display_text(canon_text, the_canon)
     display_text(counter_text, the_counter)
     display_text(the_composition, "")
-    updateMenu(new_words, counter_nouns, 5, "newword")
-    updateMenu(old_words, canon_nouns, 5, "oldword")
+    updateMenu(new_words, counter_nouns, 5, "newWord")
+    updateMenu(old_words, canon_nouns, 5, "oldWord")
 
     current_lines = [...Array(NUM_LINES).keys()].map(_ => random_sentence(canon_nouns, canon_verbs, canon_adjectives))
 
@@ -221,7 +227,6 @@ function loadTexts(a_pairing) {
         display_lines(current_lines)
     }, UPDATE_INTERVAL)
 }
-loadTexts("DISCOVERY")
 
 // const a_text = [...Array(10).keys()].reduce((t,x) => t + `
 // ` + random_sentence(canon_nouns, canon_verbs, canon_adjectives), "")
@@ -238,3 +243,5 @@ Object.entries(text_pairings).forEach(p => {
 pair_select.addEventListener("change", (event) => {
     loadTexts(event.target.value)
 })
+
+loadTexts("DISCOVERY")
