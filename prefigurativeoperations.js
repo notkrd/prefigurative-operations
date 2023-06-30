@@ -1,3 +1,50 @@
+const uluru_statement = `ULURU STATEMENT FROM THE HEART
+We, gathered at the 2017 National Constitutional Convention, coming from all points of the southern sky, make this statement from the heart:
+Our Aboriginal and Torres Strait Islander tribes were the first sovereign Nations of the Australian continent and its adjacent islands, and possessed it under our own laws and customs.
+This our ancestors did, according to the reckoning of our culture, from the Creation, according to the common law from ‘time immemorial’, and according to science more than 60,000 years
+ago.
+This sovereignty is a spiritual notion: the ancestral tie between the land, or ‘mother nature’, and the Aboriginal and Torres Strait Islander peoples who were born therefrom, remain
+attached thereto, and must one day return thither to be united with our ancestors. This link is the basis of the ownership of the soil, or better, of sovereignty. It has never been ceded or
+extinguished, and co-exists with the sovereignty of the Crown. 
+How could it be otherwise? That peoples possessed a land for sixty millennia and this sacredlink disappears from world history in merely the last two hundred years?
+With substantive constitutional change and structural reform, we believe this ancient sovereignty can shine through as a fuller expression of Australia’s nationhood.
+Proportionally, we are the most incarcerated people on the planet. We are not an innately criminal people. Our children are aliened from their families at unprecedented rates. This
+cannot be because we have no love for them. And our youth languish in detention in obscene numbers. They should be our hope for the future.
+These dimensions of our crisis tell plainly the structural nature of our problem. This is the torment of our powerlessness.
+We seek constitutional reforms to empower our people and take a rightful place in our own country. When we have power over our destiny our children will flourish. They will walk in
+two worlds and their culture will be a gift to their country.
+We call for the establishment of a First Nations Voice enshrined in the Constitution.
+Makarrata is the culmination of our agenda: the coming together after a struggle. It captures our aspirations for a fair and truthful relationship with the people of Australia and a better
+future for our children based on justice and self-determination.
+We seek a Makarrata Commission to supervise a process of agreement-making between governments and First Nations and truth-telling about our history.
+In 1967 we were counted, in 2017 we seek to be heard. We leave base camp and start our trek across this vast country. We invite you to walk with us in a movement of the Australian people
+for a better future.`
+
+const aus_const =  `An Act to constitute the Commonwealth of Australia
+
+[9th July 1900]
+
+WHEREAS the people of New South Wales, Victoria, South Australia, Queensland, and Tasmania, humbly relying on the blessing of Almighty God, have agreed to unite in one indissoluble Federal Commonwealth under the Crown of the United Kingdom of Great Britain and Ireland, and under the Constitution hereby established:
+
+And whereas it is expedient to provide for the admission into the Commonwealth of other Australasian Colonies and possessions of the Queen:
+
+Be it therefore enacted by the Queen's most Excellent Majesty, by and with the advice and consent of the Lords Spiritual and Temporal, and Commons, in this present Parliament assembled, and by the authority of the same, as follows:
+
+1. Short title
+This Act may be cited as the Commonwealth of Australia Constitution Act.
+
+2. Act to extend to the Queen's successors
+The provisions of this Act referring to the Queen shall extend to Her Majesty's heirs and successors in the sovereignty of the United Kingdom.
+
+3. Proclamation of Commonwealth
+It shall be lawful for the Queen, with the advice of the Privy Council, to declare by proclamation2 that, on and after a day therein appointed, not being later than one year after the passing of this Act, the people of New South Wales, Victoria, South Australia, Queensland, and Tasmania, and also, if Her Majesty is satisfied that the people of Western Australia have agreed thereto, of Western Australia, shall be united in a Federal Commonwealth under the name of the Commonwealth of Australia. But the Queen may, at any time after the proclamation, appoint a Governor-General for the Commonwealth.
+
+4. Commencement of Act
+The Commonwealth shall be established, and the Constitution of the Commonwealth shall take effect, on and after the day so appointed. But the Parliaments of the several colonies may at any time after the passing of this Act make any such laws, to come into operation on the day so appointed, as they might have made if the Constitution had taken effect at the passing of this Act.
+
+5. Operation of the Constitution and laws
+This Act, and all laws made by the Parliament of the Commonwealth under the Constitution, shall be binding on the courts, judges, and people of every State and of every part of the Commonwealth, notwithstanding anything in the laws of any State; and the laws of the Commonwealth shall be in force on all British ships, the Queen's ships of war excepted, whose first port of clearance and whose port of destination are in the Commonwealth.`
+
 const us_const = `
 To borrow Money on the credit of the United States;
 To regulate Commerce with foreign Nations, and among the several States, and with the Indian Tribes;
@@ -68,6 +115,44 @@ Rather, upon landing, the Zapatista compa Marijose will solemnly say:
 
 // All seven of them were born on the continent called “America” and the fact that they share pain and rage with other originary peoples from this side of the ocean makes them Latin Americans. They are also Mexicans, descended from originary Mayan peoples, as confirmed by their families, neighbors and acquaintances. They are also Zapatistas, with documents from the autonomous municipalities and the Good Government Councils that show as much. They have not been shown to have committed any crimes that were not appropriately punished. They live, work, get sick, get well, fall in love, fall out of love, laugh, cry, remember, forget, play, get serious, take notes, make up excuses—that is, they live, in the mountains of Southeastern Mexico, in Chiapas, Mexico, Latin America, America, Planet Earth, etcetera.
 
+const assimmilation_proclamation = `In performing this duty the military commander of the United States is enjoined to make known to the inhabitants of the Philippine Islands that in succeeding to the sovereignity of Spain, in severing the former political relations, and in establishing a new political power, the authority of the United States is to be exerted for the securing of the persons and property of the people of the islands and for the confirmation of all their private rights and relations. It will be the duty of the commander of the forces of occupation to announce and proclaim in the most public manner that we come, not as invaders or conquerors, but as friends, to protect the natives in their homes, in their employments, and in their personal and religious rights. All persons who, either by active aid or by honest submission, co-operate with the Government of the United States to give effect to these beneficent purposes will receive the reward of its support and protection. All others will be brought within the lawful rule we have assumed, with firmness if need be, but without severity, so far as possible. Within the absolute domain of military authority, which necessarily is and must remain supreme in the ceded territory until the legislation of the United States shall otherwise provide, the municipal laws of the territory in respect to private rights and property and the repression of crime are to be considered as continuing in force, and to be administered by the ordinary tribunals, so far as practicable. The operations of civil and  municipal government are to be performed by such officers as may accept the supremacy of the United States by taking the oath of allegiance, or by officers chosen, as far as practicable, from the inhabitants of the islands. While the control of all the public property and the revenues of the state passes with the cession, and while the use and management of all public means of transportation are necessarily reserved to the authority of the United States, private property, whether belonging to individuals or corporations, is to be respected except for cause duly established. The taxes and duties heretofore payable by the inhabitants to the late government become payable to the authorities of the United States unless it be seen fit to substitute for them other reasonable rates or modes of contribution to the expenses of government, whether general or local. If private property be taken for military use, it shall be paid for when possible in cash, at a fair valuation, and when payment in cash is not practicable, receipts are to be given. All ports and places in the Philippine Islands in the actual possession of the land and naval forces of the United States will be opened to the commerce of all friendly nations. All goods and wares not prohibited for military reasons by due announcement of the military authority will be admitted upon payment of such duties and other charges as shall be in force at the time of their importation. Finally, it should be the earnest wish and paramount aim of the military administration to win the confidence, respect, and affection of the inhabitants of the Philippines by assuring them in every possible way that full measure of individual rights and liberties which is the heritage of free peoples, and by proving to them that the mission of the United States is one of
+
+BENEVOLENT ASSIMILATION
+
+substituting the mild sway of justice and right for arbitrary rule. In the fulfillment of this high mission, supporting the temperate administration of affairs for the greatest good of the governed, there must be sedulously maintained the strong arm of authority, to repress disturbance and to overcome all obstacles to the bestowal of the blessings of good and stable government upon the people of the Philippine Islands under the free flag of the United States.
+
+WILLIAM McKINLEY. `
+
+const text_pairings = {
+    "DISCOVERY": {
+        "canon": "Inter Caetera",
+        "counter": "421st SQUADRON (Zapatista Maritime Delegation)",
+        "description": "The papal bull Inter Caetera was issued by Pope Alexander VI in 1493, granting official religious legitimacy to the Spanish and Portuguese genocidal conquests of the Americas, calling for the overthrow of existing nations. It has still not been apologized for, or even officially repealed [update: the Doctrine was repudiated by the Vatican in April, 2023, answering sustained calls by Indigenous and decolonial movements]. The writing of the Zapista movement, issued under various pen names, based in Chiapas, Mexico including and led especially by Maya and other First Peoples in global conversation offer theories and practices of survival and resistance, gaining global attention after their uprising in 1994 and key role in the Global Justice Movement against neoliberal globalisation, and for demonstrating models of decentralized collective governance, calling for \"a world of many worlds\". This text was issued before a listening and speaking tour in Europe 500 years after Hernan Cortez' invasion. See also their Sixth Declaration of the Lacondon Jungle, and Between Light and Shadow.",
+        "canon_text": doct_discovery,
+        "counter_text": the_421st
+    },
+    "LAW": {
+        "canon": "US Supreme Court Rulings on the Slaugherhouse cases",
+        "counter": "Are Prisons Obsolete?",
+        "description": "",
+        "canon_text": us_const,
+        "counter_text": prisons_obsolete
+    },
+    "NATION": {
+        "canon": "Constitution of Australia",
+        "counter": "Uluru Statement from the Heart",
+        "description": "",
+        "canon_text": aus_const,
+        "counter_text": uluru_statement
+    },
+    "POSSESSION": {
+        "canon": "The Benevolent Assimilation Proclamation",
+        "counter": "A Discourse on Colonialism",
+        "description": "",
+    }
+    
+}
+
 const getId = (an_id) => document.getElementById(an_id)
 
 const the_canon = getId("canon")
@@ -83,9 +168,26 @@ const pair_select = getId("pairings")
 const rand_elt = (an_array) => an_array[Math.floor(Math.random() * an_array.length)]
 const rand_word = (all_words) => rand_elt(all_words).toLowerCase()
 
+
+
+let canon_text;
+let counter_text;
+let the_syntax = [["noun", "verb", "adjective", "noun"]]
+let UPDATE_INTERVAL = 3000
+let NUM_LINES = 48
+let canon_nouns;
+let canon_adjectives;
+let canon_verbs;
+let counter_nouns;
+let counter_verbs;
+let counter_adjectives;
+let current_lines;
+let sent_progression;
+
 function display_text(a_text, a_page=the_palimpsest) {
     a_page.innerText = a_text;
 }
+
 function random_sentence(from_nouns, from_verbs, from_adjectives, pattern = ["noun", "verb", "adjective", "noun"]) {
     const rand_of_kind = a_kind => {
         switch(a_kind.toLowerCase()) {
@@ -97,6 +199,7 @@ function random_sentence(from_nouns, from_verbs, from_adjectives, pattern = ["no
     }
     return pattern.reduce((t, cat) => t + " " + rand_of_kind(cat), "")
 }
+
 
 function display_lines(lines) {
     display_text(lines.reduce((t,x) => t + `
@@ -121,40 +224,21 @@ function updateMenu(the_menu, the_options, num_options, kind) {
     })
 }
 
+function escapeRegExp(text) {
+    return text.replace(/[-[\]{}()*+?.,\\^$|#\s`"]/g, '\\$&');
+  }
+
 function formatPhrase(the_phrase, the_tag, the_element) {
     let the_html = the_element.innerHTML
-    the_element.innerHTML = the_html.replaceAll(the_phrase, `<${the_tag}>${the_phrase}</${the_tag}>`)
-}
-
-const text_pairings = {
-    "DISCOVERY": {
-        "canon": "Inter Caetera",
-        "counter": "421st SQUADRON (Zapatista Maritime Delegation)",
-        "description": "The papal bull Inter Caetera was issued by Pope Alexander VI in 1493, granting official religious legitimacy to the Spanish and Portuguese genocidal conquests of the Americas, calling for the overthrow of existing nations. It has still not been apologized for, or even officially repealed [update: the Doctrine was repudiated by the Vatican in April, 2023, answering sustained calls by Indigenous and decolonial movements]. The writing of the Zapista Army, issued under various pen names, based in Chiapas, Mexico including and led especially by Maya and other First Peoples offer theories and practices of survival and resistance, gaining global attention after their uprising in 1994 and key role in the Global Justice Movement against neoliberal globalisation, and for demonstrating models of decentralized collective governance, calling for \"a world of many worlds\". This text was issued before a listening and speaking tour in Europe 500 years after Hernan Cortez' invasion.",
-        "canon_text": doct_discovery,
-        "counter_text": the_421st
-    },
-    "LAW": {
-        "canon": "US Supreme Court Rulings on the Slaugherhouse cases",
-        "counter": "Are Prisons Obsolete?",
-        "canon_text": us_const,
-        "counter_text": prisons_obsolete
-    },
-    "NATION": {
-        "canon": "Constitution of Australia",
-        "counter": "Uluru Statement From the Heart"
-    },
-    "POSSESSION": {
-        "canon": "The Benevolent Assimilation Proclamation",
-        "counter": "A Discourse on Colonialism"
-    }
-    
+    let new_text =  the_html.replaceAll(new RegExp(escapeRegExp(the_phrase), "ig"), (s) => `<${the_tag}>${s}</${the_tag}>`)
+    the_element.innerHTML = new_text
+    return new_text
 }
 
 function newWord(a_word){
     canon_nouns.push(a_word)
     updateMenu(new_words, counter_nouns, 5, "newWord")
-    formatPhrase(a_word, "b",the_counter)
+    counter_text = formatPhrase(a_word, "b",the_counter)
 }
 function oldWord(a_word){
     const index = canon_nouns.indexOf(a_word);
@@ -162,7 +246,7 @@ function oldWord(a_word){
         canon_nouns.splice(index, 1);
     }
     updateMenu(old_words, canon_nouns, 5, "oldWord")
-    formatPhrase(a_word, "s",the_canon)
+    canon_text = formatPhrase(a_word, "s",the_canon)
 }
 
 let new_proposal = new Array();
@@ -184,20 +268,6 @@ function learnSyntax(){
     }
     resetSyntax()
 }
-
-let canon_text;
-let counter_text;
-let the_syntax = [["noun", "verb", "adjective", "noun"]]
-let UPDATE_INTERVAL = 3000
-let NUM_LINES = 48
-let canon_nouns;
-let canon_adjectives;
-let canon_verbs;
-let counter_nouns;
-let counter_verbs;
-let counter_adjectives;
-let current_lines;
-let sent_progression;
 
 function loadTexts(a_pairing) {
     canon_text = text_pairings[a_pairing]["canon_text"]
