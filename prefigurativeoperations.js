@@ -115,17 +115,15 @@ Rather, upon landing, the Zapatista compa Marijose will solemnly say:
 
 // All seven of them were born on the continent called “America” and the fact that they share pain and rage with other originary peoples from this side of the ocean makes them Latin Americans. They are also Mexicans, descended from originary Mayan peoples, as confirmed by their families, neighbors and acquaintances. They are also Zapatistas, with documents from the autonomous municipalities and the Good Government Councils that show as much. They have not been shown to have committed any crimes that were not appropriately punished. They live, work, get sick, get well, fall in love, fall out of love, laugh, cry, remember, forget, play, get serious, take notes, make up excuses—that is, they live, in the mountains of Southeastern Mexico, in Chiapas, Mexico, Latin America, America, Planet Earth, etcetera.
 
-const assimmilation_proclamation = `In performing this duty the military commander of the United States is enjoined to make known to the inhabitants of the Philippine Islands that in succeeding to the sovereignity of Spain, in severing the former political relations, and in establishing a new political power, the authority of the United States is to be exerted for the securing of the persons and property of the people of the islands and for the confirmation of all their private rights and relations. It will be the duty of the commander of the forces of occupation to announce and proclaim in the most public manner that we come, not as invaders or conquerors, but as friends, to protect the natives in their homes, in their employments, and in their personal and religious rights. All persons who, either by active aid or by honest submission, co-operate with the Government of the United States to give effect to these beneficent purposes will receive the reward of its support and protection. All others will be brought within the lawful rule we have assumed, with firmness if need be, but without severity, so far as possible. Within the absolute domain of military authority, which necessarily is and must remain supreme in the ceded territory until the legislation of the United States shall otherwise provide, the municipal laws of the territory in respect to private rights and property and the repression of crime are to be considered as continuing in force, and to be administered by the ordinary tribunals, so far as practicable. The operations of civil and  municipal government are to be performed by such officers as may accept the supremacy of the United States by taking the oath of allegiance, or by officers chosen, as far as practicable, from the inhabitants of the islands. While the control of all the public property and the revenues of the state passes with the cession, and while the use and management of all public means of transportation are necessarily reserved to the authority of the United States, private property, whether belonging to individuals or corporations, is to be respected except for cause duly established. The taxes and duties heretofore payable by the inhabitants to the late government become payable to the authorities of the United States unless it be seen fit to substitute for them other reasonable rates or modes of contribution to the expenses of government, whether general or local. If private property be taken for military use, it shall be paid for when possible in cash, at a fair valuation, and when payment in cash is not practicable, receipts are to be given. All ports and places in the Philippine Islands in the actual possession of the land and naval forces of the United States will be opened to the commerce of all friendly nations. All goods and wares not prohibited for military reasons by due announcement of the military authority will be admitted upon payment of such duties and other charges as shall be in force at the time of their importation. Finally, it should be the earnest wish and paramount aim of the military administration to win the confidence, respect, and affection of the inhabitants of the Philippines by assuring them in every possible way that full measure of individual rights and liberties which is the heritage of free peoples, and by proving to them that the mission of the United States is one of
-
-BENEVOLENT ASSIMILATION
-
+const assimmilation_proclamation = `In performing this duty the military commander of the United States is enjoined to make known to the inhabitants of the Philippine Islands that in succeeding to the sovereignity of Spain, in severing the former political relations, and in establishing a new political power, the authority of the United States is to be exerted for the securing of the persons and property of the people of the islands and for the confirmation of all their private rights and relations. It will be the duty of the commander of the forces of occupation to announce and proclaim in the most public manner that we come, not as invaders or conquerors, but as friends, to protect the natives in their homes, in their employments, and in their personal and religious rights. All persons who, either by active aid or by honest submission, co-operate with the Government of the United States to give effect to these beneficent purposes will receive the reward of its support and protection. All others will be brought within the lawful rule we have assumed, with firmness if need be, but without severity, so far as possible. Within the absolute domain of military authority, which necessarily is and must remain supreme in the ceded territory until the legislation of the United States shall otherwise provide, the municipal laws of the territory in respect to private rights and property and the repression of crime are to be considered as continuing in force, and to be administered by the ordinary tribunals, so far as practicable. The operations of civil and  municipal government are to be performed by such officers as may accept the supremacy of the United States by taking the oath of allegiance, or by officers chosen, as far as practicable, from the inhabitants of the islands. While the control of all the public property and the revenues of the state passes with the cession, and while the use and management of all public means of transportation are necessarily reserved to the authority of the United States, private property, whether belonging to individuals or corporations, is to be respected except for cause duly established. The taxes and duties heretofore payable by the inhabitants to the late government become payable to the authorities of the United States unless it be seen fit to substitute for them other reasonable rates or modes of contribution to the expenses of government, whether general or local. If private property be taken for military use, it shall be paid for when possible in cash, at a fair valuation, and when payment in cash is not practicable, receipts are to be given. All ports and places in the Philippine Islands in the actual possession of the land and naval forces of the United States will be opened to the commerce of all friendly nations. All goods and wares not prohibited for military reasons by due announcement of the military authority will be admitted upon payment of such duties and other charges as shall be in force at the time of their importation. Finally, it should be the earnest wish and paramount aim of the military administration to win the confidence, respect, and affection of the inhabitants of the Philippines by assuring them in every possible way that full measure of individual rights and liberties which is the heritage of free peoples, and by proving to them that the mission of the United States is one of 
+BENEVOLENT ASSIMILATION 
 substituting the mild sway of justice and right for arbitrary rule. In the fulfillment of this high mission, supporting the temperate administration of affairs for the greatest good of the governed, there must be sedulously maintained the strong arm of authority, to repress disturbance and to overcome all obstacles to the bestowal of the blessings of good and stable government upon the people of the Philippine Islands under the free flag of the United States.
 
 WILLIAM McKINLEY. `
 
 const text_pairings = {
     "DISCOVERY": {
-        "canon": "Inter Caetera",
+        "canon": "The Papal Bull \"Inter Caetera\"",
         "counter": "421st SQUADRON (Zapatista Maritime Delegation)",
         "description": "The papal bull Inter Caetera was issued by Pope Alexander VI in 1493, granting official religious legitimacy to the Spanish and Portuguese genocidal conquests of the Americas, calling for the overthrow of existing nations. It has still not been apologized for, or even officially repealed [update: the Doctrine was repudiated by the Vatican in April, 2023, answering sustained calls by Indigenous and decolonial movements]. The writing of the Zapista movement, issued under various pen names, based in Chiapas, Mexico including and led especially by Maya and other First Peoples in global conversation offer theories and practices of survival and resistance, gaining global attention after their uprising in 1994 and key role in the Global Justice Movement against neoliberal globalisation, and for demonstrating models of decentralized collective governance, calling for \"a world of many worlds\". This text was issued before a listening and speaking tour in Europe 500 years after Hernan Cortez' invasion. See also their Sixth Declaration of the Lacondon Jungle, and Between Light and Shadow.",
         "canon_text": doct_discovery,
@@ -172,38 +170,66 @@ const rand_word = (all_words) => rand_elt(all_words).toLowerCase()
 
 let canon_text;
 let counter_text;
-let the_syntax = [["noun", "verb", "adjective", "noun"]]
+let the_syntax = [["noun","verb"],["adjective", "noun", "verb","noun"]]
 let UPDATE_INTERVAL = 3000
 let NUM_LINES = 48
+let CONTINUATION_CHANCE = 0.75
 let canon_nouns;
 let canon_adjectives;
 let canon_verbs;
 let counter_nouns;
 let counter_verbs;
 let counter_adjectives;
-let current_lines;
 let sent_progression;
+
+let current_lines = [];
+let lines_cats = [];
 
 function display_text(a_text, a_page=the_palimpsest) {
     a_page.innerText = a_text;
 }
 
-function random_sentence(from_nouns, from_verbs, from_adjectives, pattern = ["noun", "verb", "adjective", "noun"]) {
-    const rand_of_kind = a_kind => {
-        switch(a_kind.toLowerCase()) {
-            case "noun": return rand_word(from_nouns);
-            case "verb": return rand_word(from_verbs);
-            case "adjective": return rand_word(from_adjectives);
-            default: return "";
-        }
+function rand_of_kind(a_kind, from_nouns, from_verbs, from_adjectives) {
+    switch(a_kind.toLowerCase()) {
+        case "noun": return rand_word(from_nouns);
+        case "verb": return rand_word(from_verbs);
+        case "adjective": return rand_word(from_adjectives);
+        default: return "";
     }
-    return pattern.reduce((t, cat) => t + " " + rand_of_kind(cat), "")
 }
 
+function random_sentence(from_nouns, from_verbs, from_adjectives, pattern = ["noun", "verb", "adjective", "noun"]) {
+    the_sent = []
+    for(let i = 0; i < pattern.length; i++) {
+        the_sent.push(rand_of_kind(pattern[i], from_nouns, from_verbs, from_adjectives))
+    }
+    return the_sent
+}
+
+function random_followup(from_nouns, from_verbs, from_adjectives, pattern = ["noun", "verb", "adjective", "noun"], prev_sent = [], prev_cats = [])
+{
+    let common_cat_indices = pattern.reduce((acc, val, i) => prev_cats.includes(val) ? acc.concat([i]) : acc, [])
+    if (common_cat_indices.length > 0 && Math.random() < CONTINUATION_CHANCE) {
+        const randomIndex = Math.floor(Math.random() * common_cat_indices.length);
+        let sentence = []
+        for(let i = 0; i < pattern.length; i++){
+            if (i === randomIndex) {
+                sentence.push(prev_sent[i])
+            }
+            else {
+                sentence.push(rand_of_kind(pattern[i], from_nouns, from_verbs, from_adjectives))
+            }
+        }
+        return sentence
+    }
+    else {
+        return random_sentence(from_nouns, from_verbs, from_adjectives, pattern)
+    }
+}
 
 function display_lines(lines) {
     display_text(lines.reduce((t,x) => t + `
-    ` + x, ""), the_composition)
+    ` + x.join(" "), ""), the_composition)
 }
 
 function updateMenu(the_menu, the_options, num_options, kind) {
@@ -289,11 +315,23 @@ function loadTexts(a_pairing) {
     updateMenu(new_words, counter_nouns, 5, "newWord")
     updateMenu(old_words, canon_nouns, 5, "oldWord")
 
-    current_lines = [...Array(NUM_LINES).keys()].map(_ => random_sentence(canon_nouns, canon_verbs, canon_adjectives))
+    for (let i = 0; i < NUM_LINES; i++) {
+        let the_cats = rand_elt(the_syntax)
+        lines_cats [i] = the_cats
+        if (i > 0) {
+            current_lines[i] = random_followup(canon_nouns, canon_verbs, canon_adjectives, the_cats, current_lines[i-1], lines_cats[i-1])
+        }
+        else{
+            current_lines[i] = random_sentence(canon_nouns, canon_verbs, canon_adjectives, the_cats)
+        }
+    }
 
     sent_progression = window.setInterval(function(){
+        let the_cats = rand_elt(the_syntax)
         current_lines.pop()
-        current_lines.unshift(random_sentence(canon_nouns, canon_verbs, canon_adjectives, rand_elt(the_syntax)))
+        lines_cats.pop()
+        current_lines.unshift(random_followup(canon_nouns, canon_verbs, canon_adjectives, the_cats, current_lines[0], lines_cats[0]))
+        lines_cats.unshift(the_cats)
         display_lines(current_lines)
     }, UPDATE_INTERVAL)
 }
