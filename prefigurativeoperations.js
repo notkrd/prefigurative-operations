@@ -1,3 +1,20 @@
+const discourse_colonialism = `First we must study how colonization works to decivilize the colonizer, to brutalize him in the true sense of the word, to degrade him, to awaken him to buried instincts, to covetousness, violence, race hatred, and moral relativism; and we must show that each time a head is cut off or an eye put out in Vietnam and in France they accept the fact, each time a little girl is raped and in France they accept the fact, each time a Madagascan is tortured and in France they accept the fact, civilization acquires another dead weight, a universal regression takes place, a gangrene sets in, a center of infection begins to spread; and that at the end of all these treaties that have been violated, all these lies that have been propagated, all these punitive expeditions that have been tolerated, all these prisoners who have been tied up and "interrogated," all these patriots who have been tortured, at the end of all the racial pride that has been encouraged, all the boastfulness that has been displayed, a poison has been distilled into the veins of Europe and, slowly but surely, the continent proceeds toward savagery.
+
+And then one fine day the bourgeoisie is awakened by a terrific boomerang effect: the gestapos are busy, the prisons flll up, the torturers standing around the racks invent, refine, discuss...
+
+For my part, I make a systematic defense of the non-European civilizations.
+Every day that passes, every denial of justice, every beating by the police, every demand of the workers that is drowned in blood, every scandal that is hushed up, every punitive expedition, every police van, every gendarme and every militiaman, brings home to us the value of our old societies.
+They were communal societies, never societies of the many
+for the few.
+They were societies that were not only ante-capitalist, as has been
+said, but also anti-capitalist.
+They were democratic societies, always.
+They were cooperative societies, fraternal societies.
+I make a systematic defense of the societies destroyed by
+imperialism.
+They were the fact, they did not pretend to be the idea; despite their faults, they were neither to be hated nor condemned. They were content to be. In them, neither the wordflilure nor the word avatar had any meaning. They kept hope intact.
+Whereas those are the only words that can, in all honesry, be applied to the European enterprises outside Europe. My only consolation is that periods of colonization pass, that nations sleep only for a time, and that peoples remain.`
+
 const uluru_statement = `ULURU STATEMENT FROM THE HEART
 We, gathered at the 2017 National Constitutional Convention, coming from all points of the southern sky, make this statement from the heart:
 Our Aboriginal and Torres Strait Islander tribes were the first sovereign Nations of the Australian continent and its adjacent islands, and possessed it under our own laws and customs.
@@ -6,7 +23,7 @@ ago.
 This sovereignty is a spiritual notion: the ancestral tie between the land, or ‘mother nature’, and the Aboriginal and Torres Strait Islander peoples who were born therefrom, remain
 attached thereto, and must one day return thither to be united with our ancestors. This link is the basis of the ownership of the soil, or better, of sovereignty. It has never been ceded or
 extinguished, and co-exists with the sovereignty of the Crown. 
-How could it be otherwise? That peoples possessed a land for sixty millennia and this sacredlink disappears from world history in merely the last two hundred years?
+How could it be otherwise? That peoples possessed a land for sixty millennia and this sacred link disappears from world history in merely the last two hundred years?
 With substantive constitutional change and structural reform, we believe this ancient sovereignty can shine through as a fuller expression of Australia’s nationhood.
 Proportionally, we are the most incarcerated people on the planet. We are not an innately criminal people. Our children are aliened from their families at unprecedented rates. This
 cannot be because we have no love for them. And our youth languish in detention in obscene numbers. They should be our hope for the future.
@@ -30,19 +47,19 @@ And whereas it is expedient to provide for the admission into the Commonwealth o
 
 Be it therefore enacted by the Queen's most Excellent Majesty, by and with the advice and consent of the Lords Spiritual and Temporal, and Commons, in this present Parliament assembled, and by the authority of the same, as follows:
 
-1. Short title
+Short title
 This Act may be cited as the Commonwealth of Australia Constitution Act.
 
-2. Act to extend to the Queen's successors
+Act to extend to the Queen's successors
 The provisions of this Act referring to the Queen shall extend to Her Majesty's heirs and successors in the sovereignty of the United Kingdom.
 
-3. Proclamation of Commonwealth
-It shall be lawful for the Queen, with the advice of the Privy Council, to declare by proclamation2 that, on and after a day therein appointed, not being later than one year after the passing of this Act, the people of New South Wales, Victoria, South Australia, Queensland, and Tasmania, and also, if Her Majesty is satisfied that the people of Western Australia have agreed thereto, of Western Australia, shall be united in a Federal Commonwealth under the name of the Commonwealth of Australia. But the Queen may, at any time after the proclamation, appoint a Governor-General for the Commonwealth.
+Proclamation of Commonwealth
+It shall be lawful for the Queen, with the advice of the Privy Council, to declare by proclamation that, on and after a day therein appointed, not being later than one year after the passing of this Act, the people of New South Wales, Victoria, South Australia, Queensland, and Tasmania, and also, if Her Majesty is satisfied that the people of Western Australia have agreed thereto, of Western Australia, shall be united in a Federal Commonwealth under the name of the Commonwealth of Australia. But the Queen may, at any time after the proclamation, appoint a Governor-General for the Commonwealth.
 
-4. Commencement of Act
+Commencement of Act
 The Commonwealth shall be established, and the Constitution of the Commonwealth shall take effect, on and after the day so appointed. But the Parliaments of the several colonies may at any time after the passing of this Act make any such laws, to come into operation on the day so appointed, as they might have made if the Constitution had taken effect at the passing of this Act.
 
-5. Operation of the Constitution and laws
+Operation of the Constitution and laws
 This Act, and all laws made by the Parliament of the Commonwealth under the Constitution, shall be binding on the courts, judges, and people of every State and of every part of the Commonwealth, notwithstanding anything in the laws of any State; and the laws of the Commonwealth shall be in force on all British ships, the Queen's ships of war excepted, whose first port of clearance and whose port of destination are in the Commonwealth.`
 
 const us_const = `
@@ -63,12 +80,14 @@ To provide for calling forth the Militia to execute the Laws of the Union, suppr
 To provide for organizing, arming, and disciplining, the Militia, and for governing such Part of them as may be employed in the Service of the United States, reserving to the States respectively, the Appointment of the Officers, and the Authority of training the Militia according to the discipline prescribed by Congress;
 To exercise exclusive Legislation in all Cases whatsoever, over such District (not exceeding ten Miles square) as may, by Cession of particular States, and the Acceptance of Congress, become the Seat of the Government of the United States, and to exercise like Authority over all Places purchased by the Consent of the Legislature of the State in which the Same shall be, for the Erection of Forts, Magazines, Arsenals, dock-Yards, and other needful Buildings;—And
 To make all Laws which shall be necessary and proper for carrying into Execution the foregoing Powers, and all other Powers vested by this Constitution in the Government of the United States, or in any Department or Officer thereof.
-Section. 9.
+Section.
 The Migration or Importation of such Persons as any of the States now existing shall think proper to admit, shall not be prohibited by the Congress prior to the Year one thousand eight hundred and eight, but a Tax or duty may be imposed on such Importation, not exceeding ten dollars for each Person.
 `
 
 const prisons_obsolete = `In most parts of the world, it is taken for granted that whoever is convicted of a serious crime will be sent to prison. In some countries-including the United States-where capital punishment has not yet been abolished, a small but significant number of people are sentenced to death for what are considered especially grave crimes. Many people are familiar with the campaign to abolish the death penalty. In fact, it has already been abolished in most countries. Even the staunchest advocates of capital punishment acknowledge the fact that the death penalty faces serious challenges. Few people find life without the death penalty difficult to imagine. 
-On the other hand, the prison is considered an inevitable and permanent feature of our social lives. Most people are quite surprised to hear that the prison abolition movement also has a long history-one that dates back to the historical appearance of the prison as the main form of punishment. In fact, the most natural reaction is to assume that prison activists-even those who consciously refer to themselves as ”anti-prison activists”- are simply trying to ameliorate prison conditions or perhaps to reform the prison in more fundamental ways. In most circles prison abolition is simply unthinkable and implausible. Prison abolitionists are dis-missed as utopians and idealists whose ideas are at best unrealistic and impracticable, and, at worst, mystifying and foolish. This is a measure of how difficult it is to envision a social order that does not rely on the threat of sequestering people in dreadful places designed to separate them from their communities and families. The prison is considered so ”natural” that it is extremely hard to imagine life without it.
+
+On the other hand, the prison is considered an inevitable and permanent feature of our social lives. Most people are quite surprised to hear that the prison abolition movement also has a long history-one that dates back to the historical appearance of the prison as the main form of punishment. In fact, the most natural reaction is to assume that prison activists-even those who consciously refer to themselves as ”anti-prison activists”- are simply trying to ameliorate prison conditions or perhaps to reform the prison in more fundamental ways. In most circles prison abolition is simply unthinkable and implausible. Prison abolitionists are dismissed as utopians and idealists whose ideas are at best unrealistic and impracticable, and, at worst, mystifying and foolish. This is a measure of how difficult it is to envision a social order that does not rely on the threat of sequestering people in dreadful places designed to separate them from their communities and families. The prison is considered so ”natural” that it is extremely hard to imagine life without it.
+
 It is my hope that this book will encourage readers to question their own assumptions about the prison. Many people have already reached the conclusion that the death penalty is an outmoded form of punishment that violates basic principles of human rights. It is time, I believe, to encourage similar conversations about the prison. During my own career as an anti-prison activist I have seen the population of U.S. prisons increase with such rapidity that many people in black, Latino, and Native American communities now have a far greater chance of going to prison than of getting a decent education. When many young people decide to join the military service in order to avoid the inevitability of a stint in prison, it should cause us to wonder whether we should not try to introduce better alternatives.`
 
 const doct_discovery = `
@@ -82,6 +101,8 @@ Wherefore, as becomes Catholic kings and princes, after earnest consideration of
 const the_421st = `-*-
 
 (Zapatista Maritime Delegation) SupGaleano, 2021
+
+The calendar? An early morning in April. Geography? The mountains of the Mexican Southeast. A sudden silence overtakes the crickets, the distant barking of dogs, and the echo of marimba music. Here, in the belly of the mountains, it sounds more like a whisper than a shout. If we weren’t where we are, you might think it was the murmur of the open ocean. But it’s not the sound of waves crashing against the coast, the beach, or the cliff edge marked by a sheer drop. No, it’s something more than that. And then… a long wail and a sudden, brief tremor...
 
 “So it was written,” says Old Man Antonio as he sharpens his double-edged machete, and Doña Juanita nods and sighs. The fire smells like coffee and cooked corn. A cumbia is playing on the community radio. The lyrics speak of an impossible legend: a mountain traversing history against the grain.
 
@@ -115,7 +136,9 @@ Rather, upon landing, the Zapatista compa Marijose will solemnly say:
 
 // All seven of them were born on the continent called “America” and the fact that they share pain and rage with other originary peoples from this side of the ocean makes them Latin Americans. They are also Mexicans, descended from originary Mayan peoples, as confirmed by their families, neighbors and acquaintances. They are also Zapatistas, with documents from the autonomous municipalities and the Good Government Councils that show as much. They have not been shown to have committed any crimes that were not appropriately punished. They live, work, get sick, get well, fall in love, fall out of love, laugh, cry, remember, forget, play, get serious, take notes, make up excuses—that is, they live, in the mountains of Southeastern Mexico, in Chiapas, Mexico, Latin America, America, Planet Earth, etcetera.
 
-const assimmilation_proclamation = `In performing this duty the military commander of the United States is enjoined to make known to the inhabitants of the Philippine Islands that in succeeding to the sovereignity of Spain, in severing the former political relations, and in establishing a new political power, the authority of the United States is to be exerted for the securing of the persons and property of the people of the islands and for the confirmation of all their private rights and relations. It will be the duty of the commander of the forces of occupation to announce and proclaim in the most public manner that we come, not as invaders or conquerors, but as friends, to protect the natives in their homes, in their employments, and in their personal and religious rights. All persons who, either by active aid or by honest submission, co-operate with the Government of the United States to give effect to these beneficent purposes will receive the reward of its support and protection. All others will be brought within the lawful rule we have assumed, with firmness if need be, but without severity, so far as possible. Within the absolute domain of military authority, which necessarily is and must remain supreme in the ceded territory until the legislation of the United States shall otherwise provide, the municipal laws of the territory in respect to private rights and property and the repression of crime are to be considered as continuing in force, and to be administered by the ordinary tribunals, so far as practicable. The operations of civil and  municipal government are to be performed by such officers as may accept the supremacy of the United States by taking the oath of allegiance, or by officers chosen, as far as practicable, from the inhabitants of the islands. While the control of all the public property and the revenues of the state passes with the cession, and while the use and management of all public means of transportation are necessarily reserved to the authority of the United States, private property, whether belonging to individuals or corporations, is to be respected except for cause duly established. The taxes and duties heretofore payable by the inhabitants to the late government become payable to the authorities of the United States unless it be seen fit to substitute for them other reasonable rates or modes of contribution to the expenses of government, whether general or local. If private property be taken for military use, it shall be paid for when possible in cash, at a fair valuation, and when payment in cash is not practicable, receipts are to be given. All ports and places in the Philippine Islands in the actual possession of the land and naval forces of the United States will be opened to the commerce of all friendly nations. All goods and wares not prohibited for military reasons by due announcement of the military authority will be admitted upon payment of such duties and other charges as shall be in force at the time of their importation. Finally, it should be the earnest wish and paramount aim of the military administration to win the confidence, respect, and affection of the inhabitants of the Philippines by assuring them in every possible way that full measure of individual rights and liberties which is the heritage of free peoples, and by proving to them that the mission of the United States is one of 
+const assimilation_proclamation = `In performing this duty the military commander of the United States is enjoined to make known to the inhabitants of the Philippine Islands that in succeeding to the sovereignity of Spain, in severing the former political relations, and in establishing a new political power, the authority of the United States is to be exerted for the securing of the persons and property of the people of the islands and for the confirmation of all their private rights and relations. It will be the duty of the commander of the forces of occupation to announce and proclaim in the most public manner that we come, not as invaders or conquerors, but as friends, to protect the natives in their homes, in their employments, and in their personal and religious rights. All persons who, either by active aid or by honest submission, co-operate with the Government of the United States to give effect to these beneficent purposes will receive the reward of its support and protection. All others will be brought within the lawful rule we have assumed, with firmness if need be, but without severity, so far as possible... 
+
+Finally, it should be the earnest wish and paramount aim of the military administration to win the confidence, respect, and affection of the inhabitants of the Philippines by assuring them in every possible way that full measure of individual rights and liberties which is the heritage of free peoples, and by proving to them that the mission of the United States is one of 
 BENEVOLENT ASSIMILATION 
 substituting the mild sway of justice and right for arbitrary rule. In the fulfillment of this high mission, supporting the temperate administration of affairs for the greatest good of the governed, there must be sedulously maintained the strong arm of authority, to repress disturbance and to overcome all obstacles to the bestowal of the blessings of good and stable government upon the people of the Philippine Islands under the free flag of the United States.
 
@@ -125,14 +148,14 @@ const text_pairings = {
     "DISCOVERY": {
         "canon": "The Papal Bull \"Inter Caetera\"",
         "counter": "421st SQUADRON (Zapatista Maritime Delegation)",
-        "description": "The papal bull Inter Caetera was issued by Pope Alexander VI in 1493, granting official religious legitimacy to the Spanish and Portuguese genocidal conquests of the Americas, calling for the overthrow of existing nations. It has still not been apologized for, or even officially repealed [update: the Doctrine was repudiated by the Vatican in April, 2023, answering sustained calls by Indigenous and decolonial movements]. The writing of the Zapista movement, issued under various pen names, based in Chiapas, Mexico including and led especially by Maya and other First Peoples in global conversation offer theories and practices of survival and resistance, gaining global attention after their uprising in 1994 and key role in the Global Justice Movement against neoliberal globalisation, and for demonstrating models of decentralized collective governance, calling for \"a world of many worlds\". This text was issued before a listening and speaking tour in Europe 500 years after Hernan Cortez' invasion. See also their Sixth Declaration of the Lacondon Jungle, and Between Light and Shadow.",
+        "description": "The papal bull Inter Caetera was issued by Pope Alexander VI in 1493, granting official religious legitimacy to the Spanish and Portuguese genocidal conquests of the Americas, calling for the overthrow of existing nations. It was only officially repudiated in April 2023. The writing of the Zapista movement, issued under various pen names, based in Chiapas, Mexico including and led especially by Maya and other First Peoples in global encounters offer theories and practices of survival and resistance, gaining global attention after their uprising in 1994 and key role in the Global Justice Movement against neoliberal globalisation, and subsequent demonstration of models of decentralized collective governance alongside famous calls for \"a world of many worlds\". This text was issued before a listening and speaking tour in Europe 500 years after Hernan Cortez' invasion. For introductions to the Zapatistas' history of resistance, and collective articulations, read perhaps their Sixth Declaration of the Lacondon Jungle, and Between Light and Shadow.",
         "canon_text": doct_discovery,
         "counter_text": the_421st
     },
     "LAW": {
         "canon": "US Supreme Court Rulings on the Slaugherhouse cases",
         "counter": "Are Prisons Obsolete?",
-        "description": "",
+        "description": "The Slaughterhouse Cases were a supreme court ruling part instrumental in the overthrow of the attempt to create a multiracial democracy in the United States during reconstruction, providing legal sanction to a campaign of terror, severely limiting enforcement of the 14th Amendment's provisions for racial equality and universal democracy. Angela Davis articulated the role of the American prison industrial complex as an instrument of exploitation and social control. Founding the organization Critical Resistance with others including the carceral geographer Ruth Wilson Gilmore, Davis's work ignites imagining and action of systems of safety not built around cages.",
         "canon_text": us_const,
         "counter_text": prisons_obsolete
     },
@@ -147,9 +170,13 @@ const text_pairings = {
         "canon": "The Benevolent Assimilation Proclamation",
         "counter": "A Discourse on Colonialism",
         "description": "",
+        "canon_text": assimilation_proclamation,
+        "counter_text": discourse_colonialism
     }
     
 }
+
+const time_pairing = (curr_minutes) => Object.keys(text_pairings)[Math.floor(curr_minutes/60 * Object.keys(text_pairings).length)]
 
 const getId = (an_id) => document.getElementById(an_id)
 
@@ -160,6 +187,7 @@ const new_words = getId("newWords")
 const old_words = getId("oldWords")
 const new_syntax = getId("newSyntax")
 const text_names = getId("textNames")
+const next_text = getId("nextText")
 const on_texts = getId("onTexts")
 const pair_select = getId("pairings")
 
@@ -167,11 +195,11 @@ const rand_elt = (an_array) => an_array[Math.floor(Math.random() * an_array.leng
 const rand_word = (all_words) => rand_elt(all_words).toLowerCase()
 
 
-
+let curr_pairing;
 let canon_text;
 let counter_text;
 let the_syntax = [["noun","verb"],["adjective", "noun", "verb","noun"]]
-let UPDATE_INTERVAL = 3000
+let UPDATE_INTERVAL = 4000
 let NUM_LINES = 48
 let CONTINUATION_CHANCE = 0.75
 let canon_nouns;
@@ -181,9 +209,11 @@ let counter_nouns;
 let counter_verbs;
 let counter_adjectives;
 let sent_progression;
+let date_time;
 
 let current_lines = [];
 let lines_cats = [];
+let pinText = false;
 
 function display_text(a_text, a_page=the_palimpsest) {
     a_page.innerText = a_text;
@@ -252,7 +282,7 @@ function updateMenu(the_menu, the_options, num_options, kind) {
 
 function escapeRegExp(text) {
     return text.replace(/[-[\]{}()*+?.,\\^$|#\s`"]/g, '\\$&');
-  }
+}
 
 function formatPhrase(the_phrase, the_tag, the_element) {
     let the_html = the_element.innerHTML
@@ -295,7 +325,12 @@ function learnSyntax(){
     resetSyntax()
 }
 
+function pairing_title(a_pairing) {
+    return `${a_pairing}: ${text_pairings[a_pairing]["canon"]} / ${text_pairings[a_pairing]["counter"]}`
+}
+
 function loadTexts(a_pairing) {
+    curr_pairing = a_pairing
     canon_text = text_pairings[a_pairing]["canon_text"]
     counter_text = text_pairings[a_pairing]["counter_text"]
 
@@ -306,7 +341,7 @@ function loadTexts(a_pairing) {
     counter_verbs = nlp(text_pairings[a_pairing]["counter_text"]).verbs().normalize().toPresentTense().normalize().json().map((w)=>w["text"])
     counter_adjectives = nlp(text_pairings[a_pairing]["counter_text"]).adjectives().normalize().json().map((w)=>w["text"])
 
-    text_names.innerText = `${a_pairing}: ${text_pairings[a_pairing]["canon"]} / ${text_pairings[a_pairing]["counter"]}`
+    text_names.innerText = pairing_title(a_pairing)
 
     on_texts.innerText = `ON THESE TEXTS: ${text_pairings[a_pairing]["description"]}`
     display_text(canon_text, the_canon)
@@ -333,6 +368,13 @@ function loadTexts(a_pairing) {
         current_lines.unshift(random_followup(canon_nouns, canon_verbs, canon_adjectives, the_cats, current_lines[0], lines_cats[0]))
         lines_cats.unshift(the_cats)
         display_lines(current_lines)
+        let d = new Date ();
+        let mins = d.getMinutes();
+        if (time_pairing(mins) !== curr_pairing && !pinText) {
+            loadTexts(time_pairing(mins))
+        }
+        next_text.innerText = "Next - " + pairing_title(time_pairing((mins + 20) % 60)) + ` in ${(60-mins) % 20} minutes`
+
     }, UPDATE_INTERVAL)
 }
 
@@ -350,6 +392,7 @@ Object.entries(text_pairings).forEach(p => {
 
 pair_select.addEventListener("change", (event) => {
     loadTexts(event.target.value)
+    pinText = true;
 })
 
 loadTexts("DISCOVERY")

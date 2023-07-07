@@ -10,13 +10,13 @@ h1,h2,h3,h4,h5{
     text-align: center;
 }
 .text{
-    width: 400pt;
+    width: 400px;
 }
 .palimpsest {
     margin: 20px;
     display: grid;
     gap: 50px;
-    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(25vw, 1fr));
 }
 #canon {
     color: black;
@@ -36,13 +36,13 @@ h1,h2,h3,h4,h5{
 .interventions {
     position: relative;
     display: inline-block;
-    width: 100pt;
+    width: 150px;
 }
 
 .menubar{
     margin: auto;
     display: block;
-    width: 325pt;
+    width: 500px;
     padding-bottom: 2vh;
 }
 
