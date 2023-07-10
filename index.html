@@ -8,15 +8,10 @@
 </head>
 <body>
     <h1 class="title">Prefigurative Operations</h1>
-    <label for ="pairings">Select texts:</label>
-    <select name="pairings" id="pairings">
-    </select>
     <h3 id="textNames"></h3>
     <h5 id="nextText"></h3>
 
     <p class="apologia" id="instructions">INSTRUCTIONS: Hover over the above menus to pick words from the inherited text to forget, new phrases from the counter text to learn, or create a grammatical pattern to add to the language of the generator by making a sequence of kinds of words and clicking "LEARN" to add it.</p>
-    <p class="apologia">NOTE: These texts mention bodily harm, racial violence, gender and sexual violence, enslavement, and imprisonment. Prefigurative Operations invites readers to dismantle and refigure texts within the adversarial constraints of a colonial racial capitalist discourse, using critical counter-texts. The designer only hopes to be a vector for a few spores of the counter-texts' meanings and forms, not mine to fully know. Due to the hegemonic dynamics of algorithmic language processing, all texts are considered only in their English translation (the other side of this coin being, for now, some greater possibilites of subtlety and evasion in non-hegemonic languages).</p>
-    <p class="apologia" id="onTexts"></p>
     <div class="menubar">
         <div class="interventions">
             <button id="learn" class="intervention">Learn Phrase</button>
@@ -45,6 +40,8 @@
             </div>
         </div>
     </div>
+    <p class="apologia">NOTE: These texts mention bodily harm, racial and anti-Indigenous violence, gender and sexual violence, enslavement, and imprisonment. Prefigurative Operations invites readers to dismantle and refigure texts within the adversarial constraints of a colonial racial capitalist discourse, using critical counter-texts. The designer only hopes to be a vector for a few spores of the counter-texts' meanings and forms, not mine to fully know. Due to the hegemonic dynamics of algorithmic language processing, all texts are considered only in their English translation (the other side of this coin being, for now, some greater possibilites of subtlety and evasion in non-hegemonic languages).</p>
+    <p class="apologia" id="onTexts"></p>
     <div class="palimpsest">
         <div class="text">
             <p id="composition"></p>
@@ -56,6 +53,9 @@
             <p id="counter"></p>
         </div>
     </div>
+    <label for ="pairings">Select texts:</label>
+    <select name="pairings" id="pairings">
+    </select>
     <script src="compromise.js"></script>
     <script src="prefigurativeoperations.js"></script>
 </body>

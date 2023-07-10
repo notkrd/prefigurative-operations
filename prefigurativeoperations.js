@@ -62,26 +62,25 @@ The Commonwealth shall be established, and the Constitution of the Commonwealth 
 Operation of the Constitution and laws
 This Act, and all laws made by the Parliament of the Commonwealth under the Constitution, shall be binding on the courts, judges, and people of every State and of every part of the Commonwealth, notwithstanding anything in the laws of any State; and the laws of the Commonwealth shall be in force on all British ships, the Queen's ships of war excepted, whose first port of clearance and whose port of destination are in the Commonwealth.`
 
-const us_const = `
-To borrow Money on the credit of the United States;
-To regulate Commerce with foreign Nations, and among the several States, and with the Indian Tribes;
-To establish an uniform Rule of Naturalization, and uniform Laws on the subject of Bankruptcies throughout the United States;
-To coin Money, regulate the Value thereof, and of foreign Coin, and fix the Standard of Weights and Measures;
-To provide for the Punishment of counterfeiting the Securities and current Coin of the United States;
-To establish Post Offices and post Roads;
-To promote the Progress of Science and useful Arts, by securing for limited Times to Authors and Inventors the exclusive Right to their respective Writings and Discoveries;
-To constitute Tribunals inferior to the supreme Court;
-To define and punish Piracies and Felonies committed on the high Seas, and Offences against the Law of Nations;
-To declare War, grant Letters of Marque and Reprisal, and make Rules concerning Captures on Land and Water;
-To raise and support Armies, but no Appropriation of Money to that Use shall be for a longer Term than two Years;
-To provide and maintain a Navy;
-To make Rules for the Government and Regulation of the land and naval Forces;
-To provide for calling forth the Militia to execute the Laws of the Union, suppress Insurrections and repel Invasions;
-To provide for organizing, arming, and disciplining, the Militia, and for governing such Part of them as may be employed in the Service of the United States, reserving to the States respectively, the Appointment of the Officers, and the Authority of training the Militia according to the discipline prescribed by Congress;
-To exercise exclusive Legislation in all Cases whatsoever, over such District (not exceeding ten Miles square) as may, by Cession of particular States, and the Acceptance of Congress, become the Seat of the Government of the United States, and to exercise like Authority over all Places purchased by the Consent of the Legislature of the State in which the Same shall be, for the Erection of Forts, Magazines, Arsenals, dock-Yards, and other needful Buildings;—And
-To make all Laws which shall be necessary and proper for carrying into Execution the foregoing Powers, and all other Powers vested by this Constitution in the Government of the United States, or in any Department or Officer thereof.
-Section.
-The Migration or Importation of such Persons as any of the States now existing shall think proper to admit, shall not be prohibited by the Congress prior to the Year one thousand eight hundred and eight, but a Tax or duty may be imposed on such Importation, not exceeding ten dollars for each Person.
+const bureau_prisons = `
+(a) In General.—The Bureau of Prisons, under the direction of the Attorney General, shall—
+(1) have charge of the management and regulation of all Federal penal and correctional institutions;
+(2) provide suitable quarters and provide for the safekeeping, care, and subsistence of all persons charged with or convicted of offenses against the United States, or held as witnesses or otherwise;
+(3) provide for the protection, instruction, and discipline of all persons charged with or convicted of offenses against the United States;
+(4) provide technical assistance to State, tribal, and local governments in the improvement of their correctional systems;
+(5) provide notice of release of prisoners in accordance with subsections (b) and (c);
+(6) establish prerelease planning procedures that help prisoners—
+(A) apply for Federal and State benefits upon release (including Social Security benefits, and veterans’ benefits);
+(B) obtain identification, including a social security card, driver’s license or other official photo identification, and a birth certificate; and
+(C) secure such identification and benefits prior to release from a sentence to a term of imprisonment in a Federal prison or if the individual was not sentenced to a term of imprisonment in a Federal prison, prior to release from a sentence to a term of community confinement, subject to any limitations in law; and
+(7) establish reentry planning procedures that include providing Federal prisoners with information in the following areas:
+(A) Health and nutrition.
+(B) Employment.
+(C) Literacy and education.
+(D) Personal finance and consumer skills.
+(E) Community resources.
+(F) Personal growth and development.
+(G) Release requirements and procedures.
 `
 
 const prisons_obsolete = `In most parts of the world, it is taken for granted that whoever is convicted of a serious crime will be sent to prison. In some countries-including the United States-where capital punishment has not yet been abolished, a small but significant number of people are sentenced to death for what are considered especially grave crimes. Many people are familiar with the campaign to abolish the death penalty. In fact, it has already been abolished in most countries. Even the staunchest advocates of capital punishment acknowledge the fact that the death penalty faces serious challenges. Few people find life without the death penalty difficult to imagine. 
@@ -148,15 +147,15 @@ const text_pairings = {
     "DISCOVERY": {
         "canon": "The Papal Bull \"Inter Caetera\"",
         "counter": "421st SQUADRON (Zapatista Maritime Delegation)",
-        "description": "The papal bull Inter Caetera was issued by Pope Alexander VI in 1493, granting official religious legitimacy to the Spanish and Portuguese genocidal conquests of the Americas, calling for the overthrow of existing nations. It was only officially repudiated in April 2023. The writing of the Zapista movement, issued under various pen names, based in Chiapas, Mexico including and led especially by Maya and other First Peoples in global encounters offer theories and practices of survival and resistance, gaining global attention after their uprising in 1994 and key role in the Global Justice Movement against neoliberal globalisation, and subsequent demonstration of models of decentralized collective governance alongside famous calls for \"a world of many worlds\". This text was issued before a listening and speaking tour in Europe 500 years after Hernan Cortez' invasion. For introductions to the Zapatistas' history of resistance, and collective articulations, read perhaps their Sixth Declaration of the Lacondon Jungle, and Between Light and Shadow.",
+        "description": "The papal bull Inter Caetera was issued by Pope Alexander VI in 1493, granting official religious legitimacy to the Spanish and Portuguese genocidal conquests of the Americas, denying the reality of existing cultures and nations. It was only repudiated in April 2023, in the wake of indegenous organizing and the discovery of mass graves in Canadian residential schools. The writing of the Zapista movement, issued under various pen names, based in Chiapas, Mexico including and led especially by Maya and other First Peoples in global encounters offer theories and practices of survival and resistance, gaining global attention after their uprising in 1994 and key role in the Global Justice Movement against neoliberal globalisation, and  their subsequent demonstration of models of decentralized collective governance with its famous calls for \"a world of many worlds\". This text was issued before a listening and speaking tour in Europe 500 years after Hernan Cortez' invasion. For introductions to the Zapatistas' history of resistance, and collective articulations, read perhaps their Sixth Declaration of the Lacondon Jungle, and Between Light and Shadow.",
         "canon_text": doct_discovery,
         "counter_text": the_421st
     },
     "LAW": {
-        "canon": "US Supreme Court Rulings on the Slaugherhouse cases",
+        "canon": "Title 18 of the US Code § 4042 - Duties of Bureau of Prisons",
         "counter": "Are Prisons Obsolete?",
-        "description": "The Slaughterhouse Cases were a supreme court ruling part instrumental in the overthrow of the attempt to create a multiracial democracy in the United States during reconstruction, providing legal sanction to a campaign of terror, severely limiting enforcement of the 14th Amendment's provisions for racial equality and universal democracy. Angela Davis articulated the role of the American prison industrial complex as an instrument of exploitation and social control. Founding the organization Critical Resistance with others including the carceral geographer Ruth Wilson Gilmore, Davis's work ignites imagining and action of systems of safety not built around cages.",
-        "canon_text": us_const,
+        "description": "The US criminal code describes aims and regulations of the federal prison system, which along with its state counterparts confine over 1.2 million people. Angela Davis articulated the role of the American prison industrial complex as an instrument of exploitation and social control. In addition to her work in the organization Critical Resistance and alongside that of many others including the carceral geographer Ruth Wilson Gilmore, Davis's work ignites imagining and action of systems of safety not built around cages.",
+        "canon_text": bureau_prisons,
         "counter_text": prisons_obsolete
     },
     "NATION": {
@@ -169,7 +168,7 @@ const text_pairings = {
     "POSSESSION": {
         "canon": "The Benevolent Assimilation Proclamation",
         "counter": "A Discourse on Colonialism",
-        "description": "",
+        "description": "The Benevolent Assimilation Proclamation, issued by US President William McKinley in 1898 following the American occupation of the Phillipines, attempted to somehow explain the the overthrow and anexation of the Phillipine Republic as consistent with claimed American ideals of rights and freedoms - illustrating a trope performed by many colonial powers in pretending violent and extractive occupations were driven by humanitarian concern, or a racist 'civilizing mission'. The Martiniqan and French poet and politician Aimé Césaire's Discourse on Colonialism exposes the hypocracy and effaced violence in such claims to civilizational superiority by French, European, and other colonial powers, and articulates the harmful 'decivilizing' effects of colonialism on the colonizer as well as the colonized.",
         "canon_text": assimilation_proclamation,
         "counter_text": discourse_colonialism
     }
@@ -199,7 +198,7 @@ let curr_pairing;
 let canon_text;
 let counter_text;
 let the_syntax = [["noun","verb"],["adjective", "noun", "verb","noun"]]
-let UPDATE_INTERVAL = 4000
+let UPDATE_INTERVAL = 5000
 let NUM_LINES = 48
 let CONTINUATION_CHANCE = 0.75
 let canon_nouns;
