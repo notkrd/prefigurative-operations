@@ -161,7 +161,7 @@ const text_pairings = {
     "NATION": {
         "canon": "Constitution of Australia",
         "counter": "Uluru Statement from the Heart",
-        "description": "",
+        "description": "Australia, like the other settler colonies in the British commonwealth, was established in denial of the governance structures of First Nations in the territories that are claimed, in the Australian Constitution, for the British Crown and Christian God: in Australia's case through a genocide against cultures with continuity 'according to the common law from 'time immemorial', and according to science more than 60,000 years ago'. The Uluru Statement from the Heart, issued by a council after consultations makes calls for truth-telling, political representation, and an end to dispropoportionate detention. Accompanying a national legal process with a referendum on establishment of an Aboriginal and Torres Strait Islander Voice to occur late in 2023, the Uluru Statement speaks with words that cut through this formal context.",
         "canon_text": aus_const,
         "counter_text": uluru_statement
     },
