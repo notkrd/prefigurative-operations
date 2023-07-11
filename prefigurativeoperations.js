@@ -1,4 +1,6 @@
-const discourse_colonialism = `First we must study how colonization works to decivilize the colonizer, to brutalize him in the true sense of the word, to degrade him, to awaken him to buried instincts, to covetousness, violence, race hatred, and moral relativism; and we must show that each time a head is cut off or an eye put out in Vietnam and in France they accept the fact, each time a little girl is raped and in France they accept the fact, each time a Madagascan is tortured and in France they accept the fact, civilization acquires another dead weight, a universal regression takes place, a gangrene sets in, a center of infection begins to spread; and that at the end of all these treaties that have been violated, all these lies that have been propagated, all these punitive expeditions that have been tolerated, all these prisoners who have been tied up and "interrogated," all these patriots who have been tortured, at the end of all the racial pride that has been encouraged, all the boastfulness that has been displayed, a poison has been distilled into the veins of Europe and, slowly but surely, the continent proceeds toward savagery.
+const discourse_colonialism = `from Discourse on Colonialism -  Aimé Césaire, 1955
+
+First we must study how colonization works to decivilize the colonizer, to brutalize him in the true sense of the word, to degrade him, to awaken him to buried instincts, to covetousness, violence, race hatred, and moral relativism; and we must show that each time a head is cut off or an eye put out in Vietnam and in France they accept the fact, each time a little girl is raped and in France they accept the fact, each time a Madagascan is tortured and in France they accept the fact, civilization acquires another dead weight, a universal regression takes place, a gangrene sets in, a center of infection begins to spread; and that at the end of all these treaties that have been violated, all these lies that have been propagated, all these punitive expeditions that have been tolerated, all these prisoners who have been tied up and "interrogated," all these patriots who have been tortured, at the end of all the racial pride that has been encouraged, all the boastfulness that has been displayed, a poison has been distilled into the veins of Europe and, slowly but surely, the continent proceeds toward savagery.
 
 And then one fine day the bourgeoisie is awakened by a terrific boomerang effect: the gestapos are busy, the prisons flll up, the torturers standing around the racks invent, refine, discuss...
 
@@ -12,10 +14,10 @@ They were democratic societies, always.
 They were cooperative societies, fraternal societies.
 I make a systematic defense of the societies destroyed by
 imperialism.
-They were the fact, they did not pretend to be the idea; despite their faults, they were neither to be hated nor condemned. They were content to be. In them, neither the wordflilure nor the word avatar had any meaning. They kept hope intact.
+They were the fact, they did not pretend to be the idea; despite their faults, they were neither to be hated nor condemned. They were content to be. In them, neither the word failure nor the word avatar had any meaning. They kept hope intact.
 Whereas those are the only words that can, in all honesry, be applied to the European enterprises outside Europe. My only consolation is that periods of colonization pass, that nations sleep only for a time, and that peoples remain.`
 
-const uluru_statement = `ULURU STATEMENT FROM THE HEART
+const uluru_statement = `Uluru Statement From the Heart - First Nations National Constitutional Convention
 We, gathered at the 2017 National Constitutional Convention, coming from all points of the southern sky, make this statement from the heart:
 Our Aboriginal and Torres Strait Islander tribes were the first sovereign Nations of the Australian continent and its adjacent islands, and possessed it under our own laws and customs.
 This our ancestors did, according to the reckoning of our culture, from the Creation, according to the common law from ‘time immemorial’, and according to science more than 60,000 years
@@ -37,9 +39,7 @@ We seek a Makarrata Commission to supervise a process of agreement-making betwee
 In 1967 we were counted, in 2017 we seek to be heard. We leave base camp and start our trek across this vast country. We invite you to walk with us in a movement of the Australian people
 for a better future.`
 
-const aus_const =  `An Act to constitute the Commonwealth of Australia
-
-[9th July 1900]
+const aus_const =  `An Act to Constitute the Commonwealth of Australia - 9th July 1900
 
 WHEREAS the people of New South Wales, Victoria, South Australia, Queensland, and Tasmania, humbly relying on the blessing of Almighty God, have agreed to unite in one indissoluble Federal Commonwealth under the Crown of the United Kingdom of Great Britain and Ireland, and under the Constitution hereby established:
 
@@ -62,7 +62,8 @@ The Commonwealth shall be established, and the Constitution of the Commonwealth 
 Operation of the Constitution and laws
 This Act, and all laws made by the Parliament of the Commonwealth under the Constitution, shall be binding on the courts, judges, and people of every State and of every part of the Commonwealth, notwithstanding anything in the laws of any State; and the laws of the Commonwealth shall be in force on all British ships, the Queen's ships of war excepted, whose first port of clearance and whose port of destination are in the Commonwealth.`
 
-const bureau_prisons = `
+const bureau_prisons = `from Title 18 of the US Code § 4042 - Duties of Bureau of Prisons, 1940 and contemporary
+
 (a) In General.—The Bureau of Prisons, under the direction of the Attorney General, shall—
 (1) have charge of the management and regulation of all Federal penal and correctional institutions;
 (2) provide suitable quarters and provide for the safekeeping, care, and subsistence of all persons charged with or convicted of offenses against the United States, or held as witnesses or otherwise;
@@ -83,7 +84,9 @@ const bureau_prisons = `
 (G) Release requirements and procedures.
 `
 
-const prisons_obsolete = `In most parts of the world, it is taken for granted that whoever is convicted of a serious crime will be sent to prison. In some countries-including the United States-where capital punishment has not yet been abolished, a small but significant number of people are sentenced to death for what are considered especially grave crimes. Many people are familiar with the campaign to abolish the death penalty. In fact, it has already been abolished in most countries. Even the staunchest advocates of capital punishment acknowledge the fact that the death penalty faces serious challenges. Few people find life without the death penalty difficult to imagine. 
+const prisons_obsolete = `
+from Are Prisons Obsolete - Angela Davis, 2003 
+In most parts of the world, it is taken for granted that whoever is convicted of a serious crime will be sent to prison. In some countries-including the United States-where capital punishment has not yet been abolished, a small but significant number of people are sentenced to death for what are considered especially grave crimes. Many people are familiar with the campaign to abolish the death penalty. In fact, it has already been abolished in most countries. Even the staunchest advocates of capital punishment acknowledge the fact that the death penalty faces serious challenges. Few people find life without the death penalty difficult to imagine. 
 
 On the other hand, the prison is considered an inevitable and permanent feature of our social lives. Most people are quite surprised to hear that the prison abolition movement also has a long history-one that dates back to the historical appearance of the prison as the main form of punishment. In fact, the most natural reaction is to assume that prison activists-even those who consciously refer to themselves as ”anti-prison activists”- are simply trying to ameliorate prison conditions or perhaps to reform the prison in more fundamental ways. In most circles prison abolition is simply unthinkable and implausible. Prison abolitionists are dismissed as utopians and idealists whose ideas are at best unrealistic and impracticable, and, at worst, mystifying and foolish. This is a measure of how difficult it is to envision a social order that does not rely on the threat of sequestering people in dreadful places designed to separate them from their communities and families. The prison is considered so ”natural” that it is extremely hard to imagine life without it.
 
@@ -99,7 +102,7 @@ Wherefore, as becomes Catholic kings and princes, after earnest consideration of
 
 const the_421st = `-*-
 
-(Zapatista Maritime Delegation) SupGaleano, 2021
+Zapatista Maritime Delegation - SupGaleano, 2021
 
 The calendar? An early morning in April. Geography? The mountains of the Mexican Southeast. A sudden silence overtakes the crickets, the distant barking of dogs, and the echo of marimba music. Here, in the belly of the mountains, it sounds more like a whisper than a shout. If we weren’t where we are, you might think it was the murmur of the open ocean. But it’s not the sound of waves crashing against the coast, the beach, or the cliff edge marked by a sheer drop. No, it’s something more than that. And then… a long wail and a sudden, brief tremor...
 
@@ -135,7 +138,9 @@ Rather, upon landing, the Zapatista compa Marijose will solemnly say:
 
 // All seven of them were born on the continent called “America” and the fact that they share pain and rage with other originary peoples from this side of the ocean makes them Latin Americans. They are also Mexicans, descended from originary Mayan peoples, as confirmed by their families, neighbors and acquaintances. They are also Zapatistas, with documents from the autonomous municipalities and the Good Government Councils that show as much. They have not been shown to have committed any crimes that were not appropriately punished. They live, work, get sick, get well, fall in love, fall out of love, laugh, cry, remember, forget, play, get serious, take notes, make up excuses—that is, they live, in the mountains of Southeastern Mexico, in Chiapas, Mexico, Latin America, America, Planet Earth, etcetera.
 
-const assimilation_proclamation = `In performing this duty the military commander of the United States is enjoined to make known to the inhabitants of the Philippine Islands that in succeeding to the sovereignity of Spain, in severing the former political relations, and in establishing a new political power, the authority of the United States is to be exerted for the securing of the persons and property of the people of the islands and for the confirmation of all their private rights and relations. It will be the duty of the commander of the forces of occupation to announce and proclaim in the most public manner that we come, not as invaders or conquerors, but as friends, to protect the natives in their homes, in their employments, and in their personal and religious rights. All persons who, either by active aid or by honest submission, co-operate with the Government of the United States to give effect to these beneficent purposes will receive the reward of its support and protection. All others will be brought within the lawful rule we have assumed, with firmness if need be, but without severity, so far as possible... 
+const assimilation_proclamation = `Benevolent Assimilation Proclamation - William McKinley, 1898
+
+In performing this duty the military commander of the United States is enjoined to make known to the inhabitants of the Philippine Islands that in succeeding to the sovereignity of Spain, in severing the former political relations, and in establishing a new political power, the authority of the United States is to be exerted for the securing of the persons and property of the people of the islands and for the confirmation of all their private rights and relations. It will be the duty of the commander of the forces of occupation to announce and proclaim in the most public manner that we come, not as invaders or conquerors, but as friends, to protect the natives in their homes, in their employments, and in their personal and religious rights. All persons who, either by active aid or by honest submission, co-operate with the Government of the United States to give effect to these beneficent purposes will receive the reward of its support and protection. All others will be brought within the lawful rule we have assumed, with firmness if need be, but without severity, so far as possible... 
 
 Finally, it should be the earnest wish and paramount aim of the military administration to win the confidence, respect, and affection of the inhabitants of the Philippines by assuring them in every possible way that full measure of individual rights and liberties which is the heritage of free peoples, and by proving to them that the mission of the United States is one of 
 BENEVOLENT ASSIMILATION 
@@ -147,7 +152,7 @@ const text_pairings = {
     "DISCOVERY": {
         "canon": "The Papal Bull \"Inter Caetera\"",
         "counter": "421st SQUADRON (Zapatista Maritime Delegation)",
-        "description": "The papal bull Inter Caetera was issued by Pope Alexander VI in 1493, granting official religious legitimacy to the Spanish and Portuguese genocidal conquests of the Americas, denying the reality of existing cultures and nations. It was only repudiated in April 2023, in the wake of indegenous organizing and the discovery of mass graves in Canadian residential schools. The writing of the Zapista movement, issued under various pen names, based in Chiapas, Mexico including and led especially by Maya and other First Peoples in global encounters offer theories and practices of survival and resistance, gaining global attention after their uprising in 1994 and key role in the Global Justice Movement against neoliberal globalisation, and  their subsequent demonstration of models of decentralized collective governance with its famous calls for \"a world of many worlds\". This text was issued before a listening and speaking tour in Europe 500 years after Hernan Cortez' invasion. For introductions to the Zapatistas' history of resistance, and collective articulations, read perhaps their Sixth Declaration of the Lacondon Jungle, and Between Light and Shadow.",
+        "description": "The papal bull Inter Caetera was issued by Pope Alexander VI in 1493, granting official religious legitimacy to the Spanish and Portuguese genocidal conquests of the Americas, denying the sovereignty and humanity of Indigenous nations. It was only repudiated in April 2023, in the wake of Indigenous organizing and the unearthing of mass graves in Canadian residential schools. Under various pen names, the writings of the Zapista movement, from Chiapas, Mexico and led by Maya and other First Peoples in global encounters offer theories and practices of survival and resistance, gaining global attention after their uprising in 1994 and key role in the Global Justice Movement against neoliberal globalisation, and  their subsequent demonstration of models of decentralized and free collective governance, making famous calls for \"a world of many worlds\". This text was issued before a listening and speaking tour in Europe by 170 Zapatistas 500 years after Hernan Cortez' invasion. Their Sixth Declaration of the Lacondon Jungle more directly introduces Zapatista histories and theories of resistance.",
         "canon_text": doct_discovery,
         "counter_text": the_421st
     },
@@ -161,14 +166,14 @@ const text_pairings = {
     "NATION": {
         "canon": "Constitution of Australia",
         "counter": "Uluru Statement from the Heart",
-        "description": "Australia, like the other settler colonies in the British commonwealth, was established in denial of the governance structures of First Nations in the territories that are claimed, in the Australian Constitution, for the British Crown and Christian God: in Australia's case through a genocide against cultures with continuity 'according to the common law from 'time immemorial', and according to science more than 60,000 years ago'. The Uluru Statement from the Heart, issued by a council after consultations makes calls for truth-telling, political representation, and an end to dispropoportionate detention. Accompanying a national legal process with a referendum on establishment of an Aboriginal and Torres Strait Islander Voice to occur late in 2023, the Uluru Statement speaks with words that cut through this formal context.",
+        "description": "Australia's foundation and founding documents, like that of the other settler colonies, was established in denial of the governance structures of First Nations in the territories that are claimed, in the Australian Constitution, for the British Crown and Christian God: in Australia's case through genocide perpetrated against Aboriginal and Torres Strait cultures with continuity 'according to the common law from 'time immemorial', and according to science [from] more than 60,000 years ago'. The Uluru Statement from the Heart makes calls for truth-telling, political representation, and structural changes. While Accompanying a national legal process with a referendum to occur late in 2023, the Uluru Statement from the Heart speaks with words that may cut through this formal context.",
         "canon_text": aus_const,
         "counter_text": uluru_statement
     },
     "POSSESSION": {
         "canon": "The Benevolent Assimilation Proclamation",
         "counter": "A Discourse on Colonialism",
-        "description": "The Benevolent Assimilation Proclamation, issued by US President William McKinley in 1898 following the American occupation of the Phillipines, attempted to somehow explain the the overthrow and anexation of the Phillipine Republic as consistent with claimed American ideals of rights and freedoms - illustrating a trope performed by many colonial powers in pretending violent and extractive occupations were driven by humanitarian concern, or a racist 'civilizing mission'. The Martiniqan and French poet and politician Aimé Césaire's Discourse on Colonialism exposes the hypocracy and effaced violence in such claims to civilizational superiority by French, European, and other colonial powers, and articulates the harmful 'decivilizing' effects of colonialism on the colonizer as well as the colonized.",
+        "description": "The Benevolent Assimilation Proclamation, issued by US President William McKinley in 1898 following the American occupation of the Phillipines, attempted to somehow explain the overthrow and anexation of the Phillipine Republic as consistent with proclaimed American ideals - paralleling the pretence by many colonial powers that violent and extractive occupations were driven by humanitarian concern, or a racial 'civilizing mission'. The Martinican and French poet and politician Aimé Césaire's devestating Discourse on Colonialism exposes the and effaced violence in such claims to civilizational superiority by French, European, and other colonial powers, and articulates the harmful 'decivilizing' effects of colonialism on the colonizer as well as the colonized.",
         "canon_text": assimilation_proclamation,
         "counter_text": discourse_colonialism
     }
